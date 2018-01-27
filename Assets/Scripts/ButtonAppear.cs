@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class ButtonAppear : MonoBehaviour {
+public class ButtonAppear : MonoBehaviour, IPointerEnterHandler {
 
     public GameObject buttonPanel1;
     public GameObject buttonPanel2;
@@ -10,7 +11,7 @@ public class ButtonAppear : MonoBehaviour {
     public GameObject canvas;
     public int buttonNumber;
 
-    private void OnMouseOver()
+    public void OnPointerEnter(PointerEventData eventData)
     {
         switch (canvas.GetComponent<UIMAnager1>().activeButtonPanel)
         {
@@ -39,7 +40,5 @@ public class ButtonAppear : MonoBehaviour {
                 break;
 
         }
-        
     }
-
 }
