@@ -12,9 +12,10 @@ public class Mover : MonoBehaviour {
     public Waypoint currentWaypoint;
     private Vector3 currentWaypointTargetPosition;
 
-    private bool canMove;
+    protected bool canMove { get; private set; }
 
     protected bool randomTargetDisplacement;
+    protected bool randomizeSpeed;
     
 	void Start ()
     {
@@ -56,7 +57,10 @@ public class Mover : MonoBehaviour {
         currentWaypoint = currentWaypoint.neighbours[Random.Range(0, currentWaypoint.neighbours.Length)];
         currentWaypointTargetPosition = currentWaypoint.transform.position +
                                         (randomTargetDisplacement ? OnUnitCircle() : Vector3.zero) * 0.25f;
-        speed = GaussianDistribution.Generate(speedMean, speedVariance);
+        if (randomizeSpeed)
+        {
+            speed = GaussianDistribution.Generate(speedMean, speedVariance);
+        }
     }
 
     private Vector3 OnUnitCircle()
