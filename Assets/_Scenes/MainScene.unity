@@ -13570,7 +13570,6 @@ MonoBehaviour:
   neighbours:
   - {fileID: 459239189}
   - {fileID: 1698417701}
-  - {fileID: 0}
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &802904634
 Transform:
@@ -16848,7 +16847,6 @@ MonoBehaviour:
   neighbours:
   - {fileID: 1198429138}
   - {fileID: 72149795}
-  - {fileID: 0}
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &997575470
 Transform:
@@ -27000,7 +26998,6 @@ MonoBehaviour:
   neighbours:
   - {fileID: 626067245}
   - {fileID: 1168064244}
-  - {fileID: 0}
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!4 &1579776047
 Transform:
@@ -31312,7 +31309,6 @@ MonoBehaviour:
   neighbours:
   - {fileID: 1712152336}
   - {fileID: 1252858441}
-  - {fileID: 0}
   color: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &1817269164
 GameObject:
