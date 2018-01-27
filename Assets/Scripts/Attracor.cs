@@ -15,15 +15,25 @@ public class Attracor : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        WhoIsAroud();
         influencing = true;
         startTime = Time.time;
+        Acrivate();
     }
 
 	// Update is called once per frame
 	void Update () {
-		
+		if (startTime+durationMax<=Time.time)
+        {
+            influencing = false;
+            SetMode();
+        }
 	}
+
+    private void Acrivate ()
+    {
+        WhoIsAroud();
+        SetMode();
+    }
 
     private void WhoIsAroud ()
     {
