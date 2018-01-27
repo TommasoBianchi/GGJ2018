@@ -16,6 +16,8 @@ public class Semaphore : MonoBehaviour {
 
     public float toggleTime;
 
+    public SemaphoreLight[] lights;
+
     public SemaphoreType greenSemaphore { get; private set; }
 
     private float nextToggleTime;
@@ -24,6 +26,7 @@ public class Semaphore : MonoBehaviour {
     {
         greenSemaphore = (SemaphoreType)UnityEngine.Random.Range(0, 2);
         nextToggleTime = Time.time + toggleTime - UnityEngine.Random.Range(0, toggleTime / 3f);
+        SetLights();
 	}
 	
 	void Update ()
@@ -33,6 +36,7 @@ public class Semaphore : MonoBehaviour {
             nextToggleTime = Time.time + toggleTime;
 
             ToggleSemaphore();
+            SetLights();
         }
 	}
 
@@ -53,6 +57,14 @@ public class Semaphore : MonoBehaviour {
             {
                 OnSemaphoreHorizontalGreen.Invoke();
             }
+        }
+    }
+
+    void SetLights()
+    {
+        for (int i = 0; i < lights.Length; i++)
+        {
+            lights[i].ChangeLight(greenSemaphore);
         }
     }
 }
