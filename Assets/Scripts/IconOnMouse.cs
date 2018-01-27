@@ -19,7 +19,7 @@ public class IconOnMouse : MonoBehaviour {
 
     private void GetMousePosition ()
     {
-        //mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        // mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         mousePosition = Input.mousePosition;
     }
 }

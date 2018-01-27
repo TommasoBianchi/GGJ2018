@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIMAnager1 : MonoBehaviour {
 
@@ -21,15 +22,16 @@ public class UIMAnager1 : MonoBehaviour {
     public GameObject skillButton33;
     public GameObject Disractor;
     public GameObject trashBin;
+    public GameObject[] skillPanels = new GameObject[3];
     public GameObject[] activeIcon = new GameObject[9];
 
     private bool aiming; //anti accdental click mechanic
     private bool ready; //if true athe next left key up a distractor willl be placed
-    private int currentSkill; 
-    private int currentSkillType;
-    private float offCd1; //tme at witch each first skill of each people kind will be ready
-    private float offCd2;
-    private float offCd3;
+    private int currentSkill; //numero skill
+    private int currentSkillType;//tipo di persona
+    public float offCd1; //tme at witch each first skill of each people kind will be ready
+    public float offCd2;
+    public float offCd3;
     private int skill2LastUseKill1; //kill count at the moment of use of skill 2 in each kind of people
     private int skill2LastUseKill2;
     private int skill2LastUseKill3;
@@ -37,6 +39,7 @@ public class UIMAnager1 : MonoBehaviour {
     private int skill3LastUseKill2;
     private int skill3LastUseKill3;
     private int iconOnMouse;
+    private bool paused; //Game status
     
 
     private void Start()
@@ -47,6 +50,7 @@ public class UIMAnager1 : MonoBehaviour {
         killCount = 0;
         skill2LastUseKill1 = skill2LastUseKill2 = skill2LastUseKill3 = 0;
         skill3LastUseKill1 = skill3LastUseKill2 = skill3LastUseKill3 = 0;
+        paused = false;
     }
 
     private void Update()
@@ -273,4 +277,20 @@ public class UIMAnager1 : MonoBehaviour {
         UseSkill3(3);
     }
 
+    public void Pause()
+    {
+        if (!paused)
+        {
+            Time.timeScale = 0;
+            paused = true;
+        }
+    }
+    public void Play()
+    {
+        if (paused)
+        {
+            Time.timeScale = 1;
+            paused = false;
+        }
+    }
 }
