@@ -11,7 +11,10 @@ public class VehicleMover : Mover {
 
         speed = 5f;
         turningSpeed = 1000f;
-}
+
+        SetCanMove(true);
+        randomTargetDisplacement = false;
+    }
 	
 	void Update ()
     {

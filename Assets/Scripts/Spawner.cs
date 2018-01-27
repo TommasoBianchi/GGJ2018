@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour {
 
         Waypoint[] vehicleWaypoints = FindObjectsOfType<TrafficWaypoint>();
         // Shuffle the vehicle waypoints (Fisher-Yates)
-        for (int i = vehicleWaypoints.Length - 1; i <= 1; i--)
+        for (int i = vehicleWaypoints.Length - 1; i >= 1; i--)
         {
             int j = Random.Range(0, i + 1);
             Waypoint tmp = vehicleWaypoints[i];
