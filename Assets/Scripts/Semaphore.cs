@@ -16,7 +16,7 @@ public class Semaphore : MonoBehaviour {
 
     public float toggleTime;
 
-    public SemaphoreType greenSemaphore;// { get; private set; }
+    public SemaphoreType greenSemaphore { get; private set; }
 
     private float nextToggleTime;
 

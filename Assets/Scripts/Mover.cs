@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PersonMover : MonoBehaviour {
+public class Mover : MonoBehaviour {
 
-    private float speedMean = 1f;
-    private float speedVariance = 0.05f;
+    protected float speedMean = 1f;
+    protected float speedVariance = 0.05f;
 
-    private float speed = 1f;
-    private float turningSpeed = 500f;
+    protected float speed = 1f;
+    protected float turningSpeed = 500f;
     private Waypoint currentWaypoint;
     private Vector3 currentWaypointTargetPosition;
 
@@ -19,7 +19,12 @@ public class PersonMover : MonoBehaviour {
         canMove = true;
     }
 
-    void Update ()
+    void Update()
+    {
+        Move();
+    }
+
+    protected void Move ()
     {
         Vector3 dir = (currentWaypointTargetPosition - transform.position).normalized;
         float angle = Vector2.SignedAngle(transform.right, dir);
