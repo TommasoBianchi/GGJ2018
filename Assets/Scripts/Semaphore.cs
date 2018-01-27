@@ -28,8 +28,6 @@ public class Semaphore : MonoBehaviour {
 	
 	void Update ()
     {
-        nextToggleTime -= Time.deltaTime;
-
         if (Time.time > nextToggleTime)
         {
             nextToggleTime = Time.time + toggleTime;
