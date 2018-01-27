@@ -51,7 +51,7 @@ public class VehicleMover : Mover {
 
     void RaycastCollisions()
     {
-        Vector2 origin = transform.position + transform.right * 1;
+        Vector2 origin = transform.position + transform.right * 1.2f;
         Vector2[] directions =
         {
             transform.right,
@@ -60,7 +60,7 @@ public class VehicleMover : Mover {
             Quaternion.Euler(0, 0, 20) * transform.right,
             Quaternion.Euler(0, 0, -20) * transform.right
         };
-        float[] distances = { 1.5f, 1f, 1f, 1f, 1f };
+        float[] distances = { 1.5f, 1f, 1f, 0.6f, 0.6f };
 
         for (int i = 0; i < directions.Length; i++)
         {
@@ -74,35 +74,6 @@ public class VehicleMover : Mover {
         }
 
         acceleration = Mathf.Abs(acceleration);
-
-        /*RaycastHit2D hitInfo = Physics2D.Raycast(transform.position + transform.right * 1, transform.right, 1.5f, raycastLayerMask);
-        if(hitInfo.collider != null)
-        {
-            acceleration = -Mathf.Abs(acceleration);
-            Brake(1 / hitInfo.distance);
-        }
-        else
-        {
-            hitInfo = Physics2D.Raycast(transform.position + transform.right * 1, Quaternion.Euler(0, 0, 10) * transform.right, 0.8f, raycastLayerMask);
-            if (hitInfo.collider != null)
-            {
-                acceleration = -Mathf.Abs(acceleration);
-                Brake(1 / hitInfo.distance);
-            }
-            else
-            {
-                hitInfo = Physics2D.Raycast(transform.position + transform.right * 1, Quaternion.Euler(0, 0, -10) * transform.right, 0.8f, raycastLayerMask);
-                if (hitInfo.collider != null)
-                {
-                    acceleration = -Mathf.Abs(acceleration);
-                    Brake(1 / hitInfo.distance);
-                }
-                else
-                {
-                    acceleration = Mathf.Abs(acceleration);
-                }
-            }
-        }*/
     } 
 
     private void Brake(float strength)
