@@ -31,14 +31,6 @@ public class Waypoint : MonoBehaviour {
 
     public virtual void WaypointReached(PersonMover mover)
     {
-        // TESTING: this is how a semaphore should (aproximately) work
-        mover.SetCanMove(false);
-        StartCoroutine(Wait(mover));
+        
     }
-
-    private IEnumerator Wait(PersonMover mover)
-    {
-        yield return new WaitForSeconds(3);
-        mover.SetCanMove(true);
-    }   // TESTING
 }
