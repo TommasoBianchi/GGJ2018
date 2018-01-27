@@ -6,7 +6,7 @@ public class AttractionMover : MonoBehaviour {
 
     public Vector3 attractorLocation;
     public bool attraction;
-    public int croudArea;
+    public float croudArea;
 
     private Vector3 dir;
     private bool arrived;
@@ -14,7 +14,7 @@ public class AttractionMover : MonoBehaviour {
     protected float turningSpeed = 500f;
     protected float speed = 1f;
 
-    void Start () {
+    void OnEnable () {
         arrived = false;   
 	}
 

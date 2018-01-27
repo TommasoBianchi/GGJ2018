@@ -56,18 +56,21 @@ public class Attracor : MonoBehaviour {
                 if (Neighbours[i].tag == attractive)
                 {
                     Neighbours[i].GetComponent<Mover>().enabled = false;
+                    Neighbours[i].GetComponent<BackOnTrack>().enabled = false;
                     Neighbours[i].GetComponent<AttractionMover>().enabled = true;
                     Neighbours[i].GetComponent<AttractionMover>().attractorLocation = transform.position;
                     Neighbours[i].GetComponent<AttractionMover>().attraction = true;
+                    Neighbours[i].gameObject.layer = LayerMask.NameToLayer("AttractedPerson");
                 }
-                else if (Neighbours[i].tag == attractive)
+                else if (Neighbours[i].tag == repulsive)
                 {
                     Neighbours[i].GetComponent<Mover>().enabled = false;
+                    Neighbours[i].GetComponent<BackOnTrack>().enabled = false;
                     Neighbours[i].GetComponent<AttractionMover>().enabled = true;
                     Neighbours[i].GetComponent<AttractionMover>().attractorLocation = transform.position;
                     Neighbours[i].GetComponent<AttractionMover>().attraction = false;
+                    Neighbours[i].gameObject.layer = LayerMask.NameToLayer("AttractedPerson");
                 }
-
             }
         }
 
@@ -84,8 +87,8 @@ public class Attracor : MonoBehaviour {
                     if (Neighbours[i].tag == attractive || Neighbours[i].tag == repulsive)
                     {
                         Neighbours[i].GetComponent<BackOnTrack>().enabled = true;
-                        //Neighbours[i].GetComponent<Mover>().enabled = true;
                         Neighbours[i].GetComponent<AttractionMover>().enabled = false;
+                        Neighbours[i].gameObject.layer = LayerMask.NameToLayer("Person");
                     }
                 }
             }
