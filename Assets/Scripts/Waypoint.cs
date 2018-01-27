@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Waypoint : MonoBehaviour {
-
-    public bool isSpawner;
+    
     public Waypoint[] neighbours;
     public Color color = Color.black;
+
+    void Start()
+    {
+
+    }
 
     void OnDrawGizmos()
     {

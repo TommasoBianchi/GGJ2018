@@ -5,9 +5,9 @@ using UnityEngine;
 public class PersonMover : MonoBehaviour {
 
     private float speedMean = 2f;
-    private float speedVariance = 0.2f;
+    private float speedVariance = 0.5f;
 
-    private float speed = 1f;
+    private float speed = 2f;
     private Waypoint currentWaypoint;
     
 	void Start ()
@@ -19,7 +19,7 @@ public class PersonMover : MonoBehaviour {
 
     void Update ()
     {
-        if ((transform.position - currentWaypoint.transform.position).sqrMagnitude < 0.6f * 0.6f)
+        if ((transform.position - currentWaypoint.transform.position).sqrMagnitude < 0.1f * 0.1f)
         {
             UpdateWaypoint();
         }
@@ -30,7 +30,7 @@ public class PersonMover : MonoBehaviour {
 
     private void UpdateWaypoint()
     {
-        Waypoint newWaypoint = currentWaypoint.neighbours[Random.Range(0, currentWaypoint.neighbours.Length)];
+        currentWaypoint = currentWaypoint.neighbours[Random.Range(0, currentWaypoint.neighbours.Length)];
         speed = GaussianDistribution.Generate(speedMean, speedVariance);
     }
 
