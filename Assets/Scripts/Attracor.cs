@@ -56,9 +56,18 @@ public class Attracor : MonoBehaviour {
                 if (Neighbours[i].tag == attractive)
                 {
                     Neighbours[i].GetComponent<Mover>().enabled = false;
-                    //finire di atirare
-                } 
-                    
+                    Neighbours[i].GetComponent<AttractionMover>().enabled = true;
+                    Neighbours[i].GetComponent<AttractionMover>().attractorLocation = transform.position;
+                    Neighbours[i].GetComponent<AttractionMover>().attraction = true;
+                }
+                else if (Neighbours[i].tag == attractive)
+                {
+                    Neighbours[i].GetComponent<Mover>().enabled = false;
+                    Neighbours[i].GetComponent<AttractionMover>().enabled = true;
+                    Neighbours[i].GetComponent<AttractionMover>().attractorLocation = transform.position;
+                    Neighbours[i].GetComponent<AttractionMover>().attraction = false;
+                }
+
             }
         }
 
@@ -66,8 +75,17 @@ public class Attracor : MonoBehaviour {
         {
             for (i = 0; i < Neighbours.Length; i++)
             {
-                //Neighbours[i].GetComponent<Pathfinding>.setActive(true);
+                if (Neighbours[i] == null)
+                {
+                    return;
+                }
+                else
+                {
+                    // Neighbours[i].GetComponent<Mover>().enabled = ; scrivere BackOnTrack
+                    Neighbours[i].GetComponent<AttractionMover>().enabled = false;
+                }
             }
+            Destroy(this);
         }
     }
 

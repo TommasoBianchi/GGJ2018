@@ -5,6 +5,7 @@ using UnityEngine;
 public class AttractionMover : MonoBehaviour {
 
     public Vector3 attractorLocation;
+    public bool attraction;
     public int croudArea;
 
     private Vector3 dir;
@@ -21,11 +22,18 @@ public class AttractionMover : MonoBehaviour {
     {
         if (!arrived)
         {
-            Move();
+            if (attraction)
+            {
+                MoveTo();
+            }
+            else
+            {
+                MoveAway();
+            }
         }
     }
 
-    protected void Move()
+    protected void MoveTo()
     {
         Vector3 dir = (attractorLocation - transform.position).normalized;
         float angle = Vector2.SignedAngle(transform.right, dir);
@@ -39,6 +47,26 @@ public class AttractionMover : MonoBehaviour {
         }
 
         if ((transform.position - attractorLocation).sqrMagnitude <= croudArea )
+        {
+            arrived = true;
+        }
+        transform.Translate(Vector3.right * speed * Time.deltaTime, Space.Self);
+    }
+
+    protected void MoveAway()
+    {
+        Vector3 dir = -(attractorLocation - transform.position).normalized;
+        float angle = Vector2.SignedAngle(transform.right, dir);
+        if (angle > 0)
+        {
+            transform.Rotate(0, 0, Mathf.Min(turningSpeed * Time.deltaTime, angle));
+        }
+        else
+        {
+            transform.Rotate(0, 0, Mathf.Max(-turningSpeed * Time.deltaTime, angle));
+        }
+
+        if ((transform.position - attractorLocation).sqrMagnitude <= croudArea)
         {
             arrived = true;
         }
