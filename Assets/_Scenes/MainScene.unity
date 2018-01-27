@@ -5376,7 +5376,7 @@ MonoBehaviour:
   neighbours:
   - {fileID: 997575469}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
-  semaphoreType: 0
+  semaphoreType: 1
   semaphore: {fileID: 915105399}
 --- !u!4 &1124261938
 Transform:
@@ -10313,7 +10313,7 @@ MonoBehaviour:
   neighbours:
   - {fileID: 1579776046}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
-  semaphoreType: 0
+  semaphoreType: 1
   semaphore: {fileID: 915105399}
 --- !u!4 &1987851228
 Transform:
