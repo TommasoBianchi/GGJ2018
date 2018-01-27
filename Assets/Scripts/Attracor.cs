@@ -17,7 +17,7 @@ public class Attracor : MonoBehaviour {
     {
         influencing = true;
         startTime = Time.time;
-        Acrivate();
+        Activate();
     }
 
 	// Update is called once per frame
@@ -29,7 +29,7 @@ public class Attracor : MonoBehaviour {
         }
 	}
 
-    private void Acrivate ()
+    private void Activate ()
     {
         WhoIsAroud();
         SetMode();
