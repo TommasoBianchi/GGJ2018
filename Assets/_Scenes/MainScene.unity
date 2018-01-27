@@ -1985,9 +1985,9 @@ GameObject:
   m_Component:
   - component: {fileID: 148432175}
   - component: {fileID: 148432178}
-  - component: {fileID: 148432177}
   - component: {fileID: 148432176}
-  m_Layer: 0
+  - component: {fileID: 148432177}
+  m_Layer: 10
   m_Name: Pavement (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2041,20 +2041,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &148432177
-MeshCollider:
+--- !u!61 &148432177
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 148432174}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &148432178
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8198,9 +8209,9 @@ GameObject:
   m_Component:
   - component: {fileID: 661104482}
   - component: {fileID: 661104485}
-  - component: {fileID: 661104484}
   - component: {fileID: 661104483}
-  m_Layer: 0
+  - component: {fileID: 661104484}
+  m_Layer: 10
   m_Name: Pavement (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8254,20 +8265,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &661104484
-MeshCollider:
+--- !u!61 &661104484
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 661104481}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &661104485
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -11491,9 +11513,9 @@ GameObject:
   m_Component:
   - component: {fileID: 913596802}
   - component: {fileID: 913596805}
-  - component: {fileID: 913596804}
   - component: {fileID: 913596803}
-  m_Layer: 0
+  - component: {fileID: 913596804}
+  m_Layer: 10
   m_Name: Pavement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11547,20 +11569,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &913596804
-MeshCollider:
+--- !u!61 &913596804
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 913596801}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &913596805
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15733,9 +15766,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1236360751}
   - component: {fileID: 1236360754}
-  - component: {fileID: 1236360753}
   - component: {fileID: 1236360752}
-  m_Layer: 0
+  - component: {fileID: 1236360753}
+  m_Layer: 10
   m_Name: Pavement (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15789,20 +15822,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1236360753
-MeshCollider:
+--- !u!61 &1236360753
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1236360750}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &1236360754
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16208,9 +16252,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1270836894}
   - component: {fileID: 1270836897}
-  - component: {fileID: 1270836896}
   - component: {fileID: 1270836895}
-  m_Layer: 0
+  - component: {fileID: 1270836896}
+  m_Layer: 10
   m_Name: Pavement (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16264,20 +16308,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1270836896
-MeshCollider:
+--- !u!61 &1270836896
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1270836893}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &1270836897
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16539,9 +16594,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1280080792}
   - component: {fileID: 1280080795}
-  - component: {fileID: 1280080794}
   - component: {fileID: 1280080793}
-  m_Layer: 0
+  - component: {fileID: 1280080794}
+  m_Layer: 10
   m_Name: Pavement (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16595,20 +16650,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1280080794
-MeshCollider:
+--- !u!61 &1280080794
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1280080791}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &1280080795
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19584,9 +19650,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1511208675}
   - component: {fileID: 1511208678}
-  - component: {fileID: 1511208677}
   - component: {fileID: 1511208676}
-  m_Layer: 0
+  - component: {fileID: 1511208677}
+  m_Layer: 10
   m_Name: Pavement (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19640,20 +19706,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1511208677
-MeshCollider:
+--- !u!61 &1511208677
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1511208674}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &1511208678
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -21354,9 +21431,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1623188515}
   - component: {fileID: 1623188518}
-  - component: {fileID: 1623188517}
   - component: {fileID: 1623188516}
-  m_Layer: 0
+  - component: {fileID: 1623188517}
+  m_Layer: 10
   m_Name: Pavement (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21410,20 +21487,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1623188517
-MeshCollider:
+--- !u!61 &1623188517
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1623188514}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &1623188518
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -23923,9 +24011,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1862410941}
   - component: {fileID: 1862410944}
-  - component: {fileID: 1862410943}
   - component: {fileID: 1862410942}
-  m_Layer: 0
+  - component: {fileID: 1862410943}
+  m_Layer: 10
   m_Name: Pavement (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23979,20 +24067,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1862410943
-MeshCollider:
+--- !u!61 &1862410943
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1862410940}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &1862410944
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -24987,9 +25086,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1964205431}
   - component: {fileID: 1964205434}
-  - component: {fileID: 1964205433}
   - component: {fileID: 1964205432}
-  m_Layer: 0
+  - component: {fileID: 1964205433}
+  m_Layer: 10
   m_Name: Pavement (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25043,20 +25142,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1964205433
-MeshCollider:
+--- !u!61 &1964205433
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1964205430}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &1964205434
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -26074,9 +26184,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2043288068}
   - component: {fileID: 2043288071}
-  - component: {fileID: 2043288070}
   - component: {fileID: 2043288069}
-  m_Layer: 0
+  - component: {fileID: 2043288070}
+  m_Layer: 10
   m_Name: Pavement (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26130,20 +26240,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &2043288070
-MeshCollider:
+--- !u!61 &2043288070
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2043288067}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &2043288071
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -27353,9 +27474,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2139120198}
   - component: {fileID: 2139120201}
-  - component: {fileID: 2139120200}
   - component: {fileID: 2139120199}
-  m_Layer: 0
+  - component: {fileID: 2139120200}
+  m_Layer: 10
   m_Name: Pavement (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27409,20 +27530,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &2139120200
-MeshCollider:
+--- !u!61 &2139120200
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2139120197}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.0000001}
+  m_EdgeRadius: 0
 --- !u!33 &2139120201
 MeshFilter:
   m_ObjectHideFlags: 0

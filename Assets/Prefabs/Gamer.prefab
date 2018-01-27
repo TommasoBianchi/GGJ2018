@@ -52,6 +52,8 @@ GameObject:
   - component: {fileID: 4640948542967054}
   - component: {fileID: 114349738780984818}
   - component: {fileID: 61108928578461044}
+  - component: {fileID: 114432514528306222}
+  - component: {fileID: 114967590292164312}
   m_Layer: 9
   m_Name: Gamer
   m_TagString: Untagged
@@ -137,6 +139,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentWaypoint: {fileID: 0}
+--- !u!114 &114432514528306222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890842701436234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befdaf814915a904b89e4a491c338c98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attractorLocation: {x: 0, y: 0, z: 0}
+  attraction: 0
+  croudArea: 1
+--- !u!114 &114967590292164312
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890842701436234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0e17ed3d16639f4a8d1ebd210102f55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pavement:
+    serializedVersion: 2
+    m_Bits: 1024
 --- !u!212 &212730756125249630
 SpriteRenderer:
   m_ObjectHideFlags: 1
