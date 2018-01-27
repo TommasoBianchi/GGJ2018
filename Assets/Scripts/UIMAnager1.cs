@@ -10,16 +10,18 @@ public class UIMAnager1 : MonoBehaviour {
     public int skill2Kill; //kill required to utilize the second skill
     public int skill3Kill; // kill required to utilize the third skill
 
-    public GameObject skillButton11; //first numer indicates the kind of people, the second one the type of skill
-    public GameObject skillButton12;
-    public GameObject skillButton13;
-    public GameObject skillButton21;
-    public GameObject skillButton22;
-    public GameObject skillButton23;
-    public GameObject skillButton31;
-    public GameObject skillButton32;
+    public GameObject skillButton11;//first numer indicates the kind of people, the second one the type of skill  
+    public GameObject skillButton12;   
+    public GameObject skillButton13;   
+    public GameObject skillButton21;   
+    public GameObject skillButton22;    
+    public GameObject skillButton23;    
+    public GameObject skillButton31;    
+    public GameObject skillButton32; 
     public GameObject skillButton33;
     public GameObject Disractor;
+    public GameObject trashBin;
+    public GameObject[] activeIcon = new GameObject[9];
 
     private bool aiming; //anti accdental click mechanic
     private bool ready; //if true athe next left key up a distractor willl be placed
@@ -34,6 +36,8 @@ public class UIMAnager1 : MonoBehaviour {
     private int skill3LastUseKill1; //kill count at the momento of use of skill 3 in each kind of people
     private int skill3LastUseKill2;
     private int skill3LastUseKill3;
+    private int iconOnMouse;
+    
 
     private void Start()
     {
@@ -60,11 +64,6 @@ public class UIMAnager1 : MonoBehaviour {
             ready = false;
             CreateDistraction(AimPosition);
         }
-        
-        else if (Input.GetKeyUp(KeyCode.Mouse1) && ready)
-        {
-            ready = false;
-        }
 
         else if (Input.GetKeyUp(KeyCode.Mouse0) && aiming)
         {
@@ -86,6 +85,16 @@ public class UIMAnager1 : MonoBehaviour {
         Attractor = Instantiate(Disractor, Aim, Quaternion.identity);
         Attractor.GetComponent<Attracor>().type = currentSkillType;
         Attractor.GetComponent<Attracor>().skillType = currentSkill;
+        activeIcon[iconOnMouse].SetActive(false);
+        trashBin.SetActive(false);
+    }
+
+    public void TrashSkill ()
+    {
+        activeIcon[iconOnMouse].SetActive(false);
+        aiming = false;
+        ready = false;
+        trashBin.SetActive(false);
     }
 
     private void UseSkill1(int type)
@@ -99,6 +108,9 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkill = 1;
                     currentSkillType = type;
                     offCd1 = Time.time + cd;
+                    activeIcon[0].SetActive(true);
+                    iconOnMouse = 0;
+                    trashBin.SetActive(true);
                 }
                 break;
             case 2:
@@ -108,6 +120,9 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkill = 1;
                     currentSkillType = type;
                     offCd2 = Time.time + cd;
+                    activeIcon[3].SetActive(true);
+                    iconOnMouse = 3;
+                    trashBin.SetActive(true);
                 }
                 break;
            case 3:
@@ -117,6 +132,9 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkill = 1;
                     currentSkillType = type;
                     offCd3 = Time.time + cd;
+                    activeIcon[6].SetActive(true);
+                    iconOnMouse = 6;
+                    trashBin.SetActive(true);
                 }
                 break;
 
@@ -134,6 +152,9 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkill = 2;
                     currentSkillType = type;
                     skill2LastUseKill1 = killCount;
+                    activeIcon[1].SetActive(true);
+                    iconOnMouse = 1;
+                    trashBin.SetActive(true);
                 }
                 break;
             case 2:
@@ -143,6 +164,9 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkill = 2;
                     currentSkillType = type;
                     skill2LastUseKill2 = killCount;
+                    activeIcon[4].SetActive(true);
+                    iconOnMouse = 4;
+                    trashBin.SetActive(true);
                 }
                 break;
             case 3:
@@ -152,6 +176,9 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkill = 2;
                     currentSkillType = type;
                     skill2LastUseKill3 = killCount;
+                    activeIcon[7].SetActive(true);
+                    iconOnMouse = 7;
+                    trashBin.SetActive(true);
                 }
                 break;
 
@@ -169,6 +196,9 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkill = 3;
                     currentSkillType = type;
                     skill3LastUseKill1 = killCount;
+                    activeIcon[2].SetActive(true);
+                    iconOnMouse = 2;
+                    trashBin.SetActive(true);
                 }
                 break;
             case 2:
@@ -178,6 +208,9 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkill = 3;
                     currentSkillType = type;
                     skill3LastUseKill2 = killCount;
+                    activeIcon[5].SetActive(true);
+                    iconOnMouse = 5;
+                    trashBin.SetActive(true);
                 }
                 break;
             case 3:
@@ -187,6 +220,9 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkill = 3;
                     currentSkillType = type;
                     skill3LastUseKill3 = killCount;
+                    activeIcon[8].SetActive(true);
+                    iconOnMouse = 8;
+                    trashBin.SetActive(true);
                 }
                 break;
         }
