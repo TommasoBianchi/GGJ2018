@@ -181,7 +181,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 23507471}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 711897742}
@@ -201,7 +201,7 @@ MonoBehaviour:
   neighbours:
   - {fileID: 1202255675}
   color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
-  semaphoreType: 0
+  semaphoreType: 1
   semaphore: {fileID: 1007669473}
 --- !u!1 &23804731
 GameObject:
@@ -226,7 +226,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 23804731}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1857878817}
@@ -302,7 +302,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 32196248}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1297717716}
@@ -322,8 +322,96 @@ MonoBehaviour:
   neighbours:
   - {fileID: 2068933660}
   color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
-  semaphoreType: 0
+  semaphoreType: 1
   semaphore: {fileID: 1487898556}
+--- !u!1 &42905719
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 42905721}
+  - component: {fileID: 42905720}
+  m_Layer: 0
+  m_Name: TrafficWaypoint (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &42905720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 42905719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9bee9b25365f147a4def39abef6c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 1714626083}
+  - {fileID: 1694994129}
+  color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!4 &42905721
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 42905719}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 907848687}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &52213680
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 52213682}
+  - component: {fileID: 52213681}
+  m_Layer: 0
+  m_Name: TrafficWaypoint (5)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &52213681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 52213680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9bee9b25365f147a4def39abef6c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 653746848}
+  - {fileID: 413249230}
+  color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!4 &52213682
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 52213680}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 578064705}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &56307818
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +522,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 109624033}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.5, y: 0, z: 0}
+  m_LocalPosition: {x: -18.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 531620131}
@@ -454,6 +542,51 @@ MonoBehaviour:
   neighbours:
   - {fileID: 982662301}
   color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!1 &118197503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 118197505}
+  - component: {fileID: 118197504}
+  m_Layer: 0
+  m_Name: TrafficSemaphoreWaypoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &118197504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 118197503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896b1e2ce560c654baa0f16c8c0dc062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 52213681}
+  color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
+  semaphoreType: 1
+  semaphore: {fileID: 1716767926}
+--- !u!4 &118197505
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 118197503}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 578064705}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148432174
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,7 +712,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 196244610}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1550921514}
@@ -1038,7 +1171,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 285743745}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1550921514}
@@ -1191,7 +1324,7 @@ MonoBehaviour:
   - {fileID: 1207885485}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 1716767926}
+  semaphore: {fileID: 1431044382}
 --- !u!4 &319415325
 Transform:
   m_ObjectHideFlags: 0
@@ -1244,7 +1377,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 326805702}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 598979349}
@@ -1359,7 +1492,7 @@ MonoBehaviour:
   - {fileID: 629217650}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 292510666}
+  semaphore: {fileID: 768128611}
 --- !u!4 &338810974
 Transform:
   m_ObjectHideFlags: 0
@@ -1427,7 +1560,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 348128713}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 25903100}
@@ -1447,7 +1580,7 @@ MonoBehaviour:
   neighbours:
   - {fileID: 1592942964}
   color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
-  semaphoreType: 0
+  semaphoreType: 1
   semaphore: {fileID: 915105399}
 --- !u!1 &350581533
 GameObject:
@@ -1604,6 +1737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbours:
   - {fileID: 1425677866}
+  - {fileID: 1682516602}
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!4 &366494966
 Transform:
@@ -1730,7 +1864,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 400849430}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 711897742}
@@ -1750,7 +1884,7 @@ MonoBehaviour:
   neighbours:
   - {fileID: 334003588}
   color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
-  semaphoreType: 0
+  semaphoreType: 1
   semaphore: {fileID: 1487898556}
 --- !u!1 &413249229
 GameObject:
@@ -1791,7 +1925,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 413249229}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 781322849}
@@ -1881,6 +2015,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleTime: 15
+--- !u!1 &443938075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 443938077}
+  - component: {fileID: 443938076}
+  m_Layer: 0
+  m_Name: TrafficWaypoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &443938076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 443938075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9bee9b25365f147a4def39abef6c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 118197504}
+  - {fileID: 522988594}
+  color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!4 &443938077
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 443938075}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 578064705}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &452285386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2096,7 +2274,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 522988593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2115209487}
@@ -2131,6 +2309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbours:
   - {fileID: 413249230}
+  - {fileID: 1505339566}
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!4 &528439073
 Transform:
@@ -2222,6 +2401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbours:
   - {fileID: 905679218}
+  - {fileID: 1097246398}
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &542023338
 GameObject:
@@ -2289,7 +2469,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 549437568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986940308}
@@ -2311,6 +2491,40 @@ MonoBehaviour:
   color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
   semaphoreType: 0
   semaphore: {fileID: 292510666}
+--- !u!1 &578064704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 578064705}
+  m_Layer: 0
+  m_Name: ClockWise
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &578064705
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578064704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1682516603}
+  - {fileID: 443938077}
+  - {fileID: 118197505}
+  - {fileID: 52213682}
+  - {fileID: 653746849}
+  - {fileID: 1012340886}
+  m_Father: {fileID: 1147042450}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &584985747
 GameObject:
   m_ObjectHideFlags: 0
@@ -2400,7 +2614,7 @@ MonoBehaviour:
   - {fileID: 1991825302}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 247470261}
+  semaphore: {fileID: 1747671761}
 --- !u!1 &594049593
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,6 +2871,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 598979349}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &653746847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 653746849}
+  - component: {fileID: 653746848}
+  m_Layer: 0
+  m_Name: TrafficSemaphoreWaypoint (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &653746848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 653746847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896b1e2ce560c654baa0f16c8c0dc062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 1012340885}
+  color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
+  semaphoreType: 1
+  semaphore: {fileID: 292510666}
+--- !u!4 &653746849
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 653746847}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 578064705}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &654382469
 GameObject:
@@ -2990,7 +3249,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 688864932}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1269853095}
@@ -3525,6 +3784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbours:
   - {fileID: 1364266318}
+  - {fileID: 653746848}
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!4 &820520914
 Transform:
@@ -3570,7 +3830,7 @@ MonoBehaviour:
   - {fileID: 1381436604}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 1716767926}
+  semaphore: {fileID: 768128611}
 --- !u!4 &824309802
 Transform:
   m_ObjectHideFlags: 0
@@ -3615,7 +3875,7 @@ MonoBehaviour:
   - {fileID: 715075114}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 1958789461}
+  semaphore: {fileID: 1747671761}
 --- !u!4 &828471891
 Transform:
   m_ObjectHideFlags: 0
@@ -3652,7 +3912,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 839131160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1297717716}
@@ -3672,7 +3932,7 @@ MonoBehaviour:
   neighbours:
   - {fileID: 514629022}
   color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
-  semaphoreType: 0
+  semaphoreType: 1
   semaphore: {fileID: 1007669473}
 --- !u!1 &869668789
 GameObject:
@@ -3740,7 +4000,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 905679216}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 986940308}
@@ -3762,6 +4022,40 @@ MonoBehaviour:
   color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
   semaphoreType: 0
   semaphore: {fileID: 1958789461}
+--- !u!1 &907848686
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 907848687}
+  m_Layer: 0
+  m_Name: CounterClockWise
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &907848687
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 907848686}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1097246399}
+  - {fileID: 1817269166}
+  - {fileID: 1505339567}
+  - {fileID: 42905721}
+  - {fileID: 1714626084}
+  - {fileID: 2020849468}
+  m_Father: {fileID: 1147042450}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &913596801
 GameObject:
   m_ObjectHideFlags: 0
@@ -3928,7 +4222,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 915378332}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1269853095}
@@ -4000,7 +4294,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 936762743}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 531620131}
@@ -4020,7 +4314,7 @@ MonoBehaviour:
   neighbours:
   - {fileID: 1256116001}
   color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
-  semaphoreType: 0
+  semaphoreType: 1
   semaphore: {fileID: 414778919}
 --- !u!1 &941108466
 GameObject:
@@ -4260,7 +4554,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 982662299}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 531620131}
@@ -4280,7 +4574,7 @@ MonoBehaviour:
   neighbours:
   - {fileID: 869668791}
   color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
-  semaphoreType: 0
+  semaphoreType: 1
   semaphore: {fileID: 915105399}
 --- !u!1 &986940307
 GameObject:
@@ -4447,6 +4741,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleTime: 15
+--- !u!1 &1012340884
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1012340886}
+  - component: {fileID: 1012340885}
+  m_Layer: 0
+  m_Name: TrafficWaypoint (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1012340885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012340884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9bee9b25365f147a4def39abef6c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 905679218}
+  - {fileID: 1263005583}
+  color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!4 &1012340886
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1012340884}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 578064705}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1024990686
 GameObject:
   m_ObjectHideFlags: 0
@@ -4551,6 +4889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbours:
   - {fileID: 1694994129}
+  - {fileID: 118197504}
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!4 &1056588999
 Transform:
@@ -4698,6 +5037,51 @@ Transform:
   m_Father: {fileID: 333749723}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1097246397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1097246399}
+  - component: {fileID: 1097246398}
+  m_Layer: 0
+  m_Name: TrafficSemaphoreWaypoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1097246398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1097246397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896b1e2ce560c654baa0f16c8c0dc062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 1817269165}
+  color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
+  semaphoreType: 1
+  semaphore: {fileID: 1716767926}
+--- !u!4 &1097246399
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1097246397}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 907848687}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1101975809
 GameObject:
   m_ObjectHideFlags: 0
@@ -4771,7 +5155,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1107307598}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 781322849}
@@ -4974,12 +5358,42 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1145652870}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.5, y: 0, z: 0}
+  m_LocalPosition: {x: 14, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 781322849}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1147042449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1147042450}
+  m_Layer: 0
+  m_Name: LaneV2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1147042450
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1147042449}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -6, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 578064705}
+  - {fileID: 907848687}
+  m_Father: {fileID: 1880566708}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &1151049005
 GameObject:
   m_ObjectHideFlags: 0
@@ -5017,7 +5431,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1151049005}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.5, y: 0, z: 0}
+  m_LocalPosition: {x: 18.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1297717716}
@@ -5283,7 +5697,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1189564962}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365819853}
@@ -5954,7 +6368,7 @@ MonoBehaviour:
   - {fileID: 1185357363}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 1716767926}
+  semaphore: {fileID: 673032046}
 --- !u!4 &1292332505
 Transform:
   m_ObjectHideFlags: 0
@@ -6034,7 +6448,7 @@ MonoBehaviour:
   - {fileID: 1808519179}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 247470261}
+  semaphore: {fileID: 1747671761}
 --- !u!4 &1318091421
 Transform:
   m_ObjectHideFlags: 0
@@ -6218,7 +6632,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1356076567}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2115209487}
@@ -6309,7 +6723,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1364266317}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.5, y: 0, z: 0}
+  m_LocalPosition: {x: 14, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1269853095}
@@ -6496,7 +6910,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1398110893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 25903100}
@@ -6516,7 +6930,7 @@ MonoBehaviour:
   neighbours:
   - {fileID: 1568686386}
   color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
-  semaphoreType: 0
+  semaphoreType: 1
   semaphore: {fileID: 414778919}
 --- !u!1 &1408234440
 GameObject:
@@ -6845,10 +7259,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44829727eccdea84eb092020900e8292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfPeopleToSpawn: 25
+  amountOfPeopleToSpawn: 50
   peoplePrefabs:
   - {fileID: 1890842701436234, guid: 761668809bbd31345a9dc317a555ff5b, type: 2}
-  amountOfVehiclesToSpawn: 15
+  amountOfVehiclesToSpawn: 30
   vehiclePrefabs:
   - {fileID: 1133513795110950, guid: 363bc40bbb1dfd84bb2a360dd919df78, type: 2}
 --- !u!4 &1499929980
@@ -6863,6 +7277,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1505339565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1505339567}
+  - component: {fileID: 1505339566}
+  m_Layer: 0
+  m_Name: TrafficSemaphoreWaypoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1505339566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505339565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896b1e2ce560c654baa0f16c8c0dc062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 42905720}
+  color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
+  semaphoreType: 1
+  semaphore: {fileID: 768128611}
+--- !u!4 &1505339567
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505339565}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 907848687}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1511208674
 GameObject:
@@ -7098,7 +7557,7 @@ MonoBehaviour:
   - {fileID: 1723562394}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 1958789461}
+  semaphore: {fileID: 247470261}
 --- !u!4 &1521757545
 Transform:
   m_ObjectHideFlags: 0
@@ -7305,6 +7764,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   neighbours:
   - {fileID: 522988594}
+  - {fileID: 1714626083}
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!4 &1554000833
 Transform:
@@ -7520,7 +7980,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1590585074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.5, y: 0, z: 0}
+  m_LocalPosition: {x: -18.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1297717716}
@@ -7710,6 +8170,51 @@ Transform:
   m_Father: {fileID: 1380367256}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1682516601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1682516603}
+  - component: {fileID: 1682516602}
+  m_Layer: 0
+  m_Name: TrafficSemaphoreWaypoint (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1682516602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682516601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896b1e2ce560c654baa0f16c8c0dc062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 443938076}
+  color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
+  semaphoreType: 1
+  semaphore: {fileID: 768128611}
+--- !u!4 &1682516603
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682516601}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 578064705}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1690118156
 GameObject:
   m_ObjectHideFlags: 0
@@ -7838,11 +8343,56 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1694994128}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.5, y: 0, z: 0}
+  m_LocalPosition: {x: 14, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 598979349}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1714626082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1714626084}
+  - component: {fileID: 1714626083}
+  m_Layer: 0
+  m_Name: TrafficSemaphoreWaypoint (6)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1714626083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714626082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 896b1e2ce560c654baa0f16c8c0dc062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 2020849469}
+  color: {r: 0.44852942, g: 0.04617214, b: 0.04617214, a: 1}
+  semaphoreType: 1
+  semaphore: {fileID: 1431044382}
+--- !u!4 &1714626084
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1714626082}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 14, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 907848687}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1716767924
 GameObject:
@@ -7953,7 +8503,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1721516899}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.5, y: 0, z: 0}
+  m_LocalPosition: {x: 18.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 531620131}
@@ -8090,7 +8640,7 @@ MonoBehaviour:
   - {fileID: 1087190926}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 247470261}
+  semaphore: {fileID: 673032046}
 --- !u!4 &1761550060
 Transform:
   m_ObjectHideFlags: 0
@@ -8410,6 +8960,50 @@ MonoBehaviour:
   neighbours:
   - {fileID: 1835682627}
   color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!1 &1817269164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1817269166}
+  - component: {fileID: 1817269165}
+  m_Layer: 0
+  m_Name: TrafficWaypoint (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1817269165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817269164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9bee9b25365f147a4def39abef6c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 1505339566}
+  - {fileID: 1364266318}
+  color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!4 &1817269166
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1817269164}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 907848687}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1818659020
 GameObject:
   m_ObjectHideFlags: 0
@@ -8725,6 +9319,7 @@ Transform:
   - {fileID: 761462658}
   - {fileID: 290308401}
   - {fileID: 1024990687}
+  - {fileID: 1147042450}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9158,7 +9753,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1980718834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 15.5, y: 0, z: 0}
+  m_LocalPosition: {x: 14, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2115209487}
@@ -9383,6 +9978,50 @@ MonoBehaviour:
   neighbours:
   - {fileID: 549437570}
   color: {r: 1, g: 0, b: 0, a: 1}
+--- !u!1 &2020849467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2020849468}
+  - component: {fileID: 2020849469}
+  m_Layer: 0
+  m_Name: TrafficWaypoint (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2020849468
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2020849467}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 907848687}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2020849469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2020849467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9bee9b25365f147a4def39abef6c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neighbours:
+  - {fileID: 1425677866}
+  - {fileID: 1276649883}
+  color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &2043288067
 GameObject:
   m_ObjectHideFlags: 0
@@ -9500,7 +10139,7 @@ MonoBehaviour:
   - {fileID: 961937723}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 292510666}
+  semaphore: {fileID: 768128611}
 --- !u!4 &2046034794
 Transform:
   m_ObjectHideFlags: 0
@@ -9537,7 +10176,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2051811817}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1857878817}
@@ -9641,7 +10280,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2095119737}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.5, y: 0, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1365819853}
@@ -9713,7 +10352,7 @@ MonoBehaviour:
   - {fileID: 1693088107}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 1716767926}
+  semaphore: {fileID: 768128611}
 --- !u!4 &2118662611
 Transform:
   m_ObjectHideFlags: 0
@@ -9766,7 +10405,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2136527553}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.5, y: 0, z: 0}
+  m_LocalPosition: {x: -10, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 598979349}
@@ -9803,7 +10442,7 @@ MonoBehaviour:
   - {fileID: 1818659021}
   color: {r: 0, g: 0.3897059, b: 0.08331641, a: 1}
   semaphoreType: 0
-  semaphore: {fileID: 1958789461}
+  semaphore: {fileID: 247470261}
 --- !u!4 &2147082796
 Transform:
   m_ObjectHideFlags: 0
