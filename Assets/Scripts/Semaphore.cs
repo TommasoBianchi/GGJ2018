@@ -22,7 +22,8 @@ public class Semaphore : MonoBehaviour {
 
     void Start ()
     {
-        nextToggleTime = Time.time + toggleTime;
+        greenSemaphore = (SemaphoreType)UnityEngine.Random.Range(0, 2);
+        nextToggleTime = Time.time + toggleTime - UnityEngine.Random.Range(0, toggleTime / 3f);
 	}
 	
 	void Update ()

@@ -21,13 +21,6 @@ public class PersonMover : MonoBehaviour {
 
     void Update ()
     {
-        if (!canMove) return;
-
-        if ((transform.position - currentWaypointTargetPosition).sqrMagnitude < 0.1f * 0.1f)
-        {
-            UpdateWaypoint();
-        }
-
         Vector3 dir = (currentWaypointTargetPosition - transform.position).normalized;
         float angle = Vector2.SignedAngle(transform.right, dir);
         if (angle > 0)
@@ -37,6 +30,13 @@ public class PersonMover : MonoBehaviour {
         else
         {
             transform.Rotate(0, 0, Mathf.Max(-turningSpeed * Time.deltaTime, angle));
+        }
+
+        if (!canMove) return;
+
+        if ((transform.position - currentWaypointTargetPosition).sqrMagnitude < 0.1f * 0.1f)
+        {
+            UpdateWaypoint();
         }
         transform.Translate(Vector3.right * speed * Time.deltaTime, Space.Self);
     }
