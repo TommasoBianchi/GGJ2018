@@ -13,7 +13,7 @@ public class BackOnTrack : MonoBehaviour {
     // Use this for initialization
     void Start () {
         rightWay = FindTheWay();
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -38,10 +38,11 @@ public class BackOnTrack : MonoBehaviour {
 
         for (int i=0;i<8;i++)
         {
-            if (ray[i].distance < distance)
+            if (ray[i].collider && ray[i].distance < distance)
             {
-                way = ray[i].point;
+                way = ray[i].point + Vector2.zero;
                 distance = ray[i].distance;
+
             }
         }
         return (way);

@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 114967590292164312}
   m_Layer: 9
   m_Name: Gamer
-  m_TagString: Untagged
+  m_TagString: gamer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1890842701436234}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: befdaf814915a904b89e4a491c338c98, type: 3}
   m_Name: 
@@ -159,7 +159,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1890842701436234}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a0e17ed3d16639f4a8d1ebd210102f55, type: 3}
   m_Name: 

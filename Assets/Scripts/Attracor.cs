@@ -84,11 +84,12 @@ public class Attracor : MonoBehaviour {
                     if (Neighbours[i].tag == attractive || Neighbours[i].tag == repulsive)
                     {
                         Neighbours[i].GetComponent<BackOnTrack>().enabled = true;
+                        //Neighbours[i].GetComponent<Mover>().enabled = true;
                         Neighbours[i].GetComponent<AttractionMover>().enabled = false;
                     }
                 }
             }
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 

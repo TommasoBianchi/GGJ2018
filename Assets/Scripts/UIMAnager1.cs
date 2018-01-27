@@ -56,7 +56,7 @@ public class UIMAnager1 : MonoBehaviour {
 
         if (Input.GetKeyUp(KeyCode.Mouse0) && ready)
         {
-            AimPosition = Input.mousePosition;
+            AimPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             ready = false;
             CreateDistraction(AimPosition);
         }
@@ -80,8 +80,6 @@ public class UIMAnager1 : MonoBehaviour {
 
     private void CreateDistraction(Vector3 Aim)
     {
-        Debug.Log("istanzio");
-        Debug.Log(Aim+" "+currentSkill+" "+currentSkillType);
         GameObject Attractor;
 
         Aim.z = 0;

@@ -2233,7 +2233,7 @@ MonoBehaviour:
   skillButton31: {fileID: 1900967444972300}
   skillButton32: {fileID: 1918062361358960}
   skillButton33: {fileID: 1922421898611732}
-  Disractor: {fileID: 1436910176683682, guid: dda7f3294d8a9e741b1e6a7a5c3e9229, type: 2}
+  Disractor: {fileID: 1079966796768344, guid: c707114ba8105c94681024dd53d33df7, type: 2}
 --- !u!114 &114990158097241126
 MonoBehaviour:
   m_ObjectHideFlags: 1
