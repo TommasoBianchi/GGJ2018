@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class PersonMover : MonoBehaviour {
 
-    private float speedMean = 2f;
-    private float speedVariance = 0.5f;
+    private float speedMean = 1f;
+    private float speedVariance = 0.05f;
 
-    private float speed = 2f;
+    private float speed = 1f;
+    private float turningSpeed = 500f;
     private Waypoint currentWaypoint;
     
 	void Start ()
     {
-        // TESTING
-        SetWaypoint(FindObjectOfType<CrowdWaypoint>());
-        // TESTING
+
     }
 
     void Update ()
@@ -25,7 +24,16 @@ public class PersonMover : MonoBehaviour {
         }
 
         Vector3 dir = (currentWaypoint.transform.position - transform.position).normalized;
-        transform.Translate(dir * speed * Time.deltaTime);
+        float angle = Vector2.SignedAngle(transform.right, dir);
+        if (angle > 0)
+        {
+            transform.Rotate(0, 0, Mathf.Min(turningSpeed * Time.deltaTime, angle));
+        }
+        else
+        {
+            transform.Rotate(0, 0, Mathf.Max(-turningSpeed * Time.deltaTime, angle));
+        }
+        transform.Translate(Vector3.right * speed * Time.deltaTime, Space.Self);
     }
 
     private void UpdateWaypoint()
