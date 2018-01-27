@@ -11,14 +11,18 @@ public class PersonMover : MonoBehaviour {
     private float turningSpeed = 500f;
     private Waypoint currentWaypoint;
     private Vector3 currentWaypointTargetPosition;
+
+    private bool canMove;
     
 	void Start ()
     {
-
+        canMove = true;
     }
 
     void Update ()
     {
+        if (!canMove) return;
+
         if ((transform.position - currentWaypointTargetPosition).sqrMagnitude < 0.1f * 0.1f)
         {
             UpdateWaypoint();
@@ -39,6 +43,8 @@ public class PersonMover : MonoBehaviour {
 
     private void UpdateWaypoint()
     {
+        currentWaypoint.WaypointReached(this);
+
         currentWaypoint = currentWaypoint.neighbours[Random.Range(0, currentWaypoint.neighbours.Length)];
         currentWaypointTargetPosition = currentWaypoint.transform.position + OnUnitCircle() * 0.25f;
         speed = GaussianDistribution.Generate(speedMean, speedVariance);
@@ -57,5 +63,10 @@ public class PersonMover : MonoBehaviour {
         {
             UpdateWaypoint();
         }
+    }
+
+    public void SetCanMove(bool canMove)
+    {
+        this.canMove = canMove;
     }
 }
