@@ -29,7 +29,7 @@ public class Waypoint : MonoBehaviour {
         }
     }
 
-    public virtual void WaypointReached(PersonMover mover)
+    public virtual void WaypointReached(Mover mover)
     {
         
     }

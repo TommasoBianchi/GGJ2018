@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CrowdSemaphoreWaypoint : Waypoint {
+public class SemaphoreWaypoint : Waypoint {
 
     public Semaphore.SemaphoreType semaphoreType;
 
     public Semaphore semaphore;
 
-    private Queue<PersonMover> queuedPeople;
+    private Queue<Mover> queuedMovers;
 
     void Start()
     {
-        queuedPeople = new Queue<PersonMover>();
+        queuedMovers = new Queue<Mover>();
         if (semaphoreType == Semaphore.SemaphoreType.Horizontal)
         {
             semaphore.OnSemaphoreHorizontalGreen += DequeuePeople;
@@ -25,9 +25,9 @@ public class CrowdSemaphoreWaypoint : Waypoint {
 
     private void DequeuePeople()
     {
-        while(queuedPeople.Count > 0)
+        while(queuedMovers.Count > 0)
         {
-            queuedPeople.Dequeue().SetCanMove(true);
+            queuedMovers.Dequeue().SetCanMove(true);
         }
     }
 
@@ -36,7 +36,7 @@ public class CrowdSemaphoreWaypoint : Waypoint {
 		
 	}
 
-    public override void WaypointReached(PersonMover mover)
+    public override void WaypointReached(Mover mover)
     {
         base.WaypointReached(mover);
         
@@ -47,7 +47,7 @@ public class CrowdSemaphoreWaypoint : Waypoint {
         else
         {
             mover.SetCanMove(false);
-            queuedPeople.Enqueue(mover);
+            queuedMovers.Enqueue(mover);
         }
     }
 }
