@@ -7,6 +7,8 @@ public class Attracor : MonoBehaviour {
     public float range;
     public float duraionMin;
     public float durationMax;
+    public int type;
+    public int skillType;
 
     private Collider2D[] Neighbours;
     private bool influencing;
@@ -50,7 +52,7 @@ public class Attracor : MonoBehaviour {
             for(i=0;i<Neighbours.Length;i++)
             {
                 //Aggiungere Behaviour in base al tipo di tizio/Power
-                //Neighbours[i].GetComponent<Pathfinding>.setActive(false);
+                //Neighbours[i].GetComponent<Mover>.setActive(false);
             }
         }
 
