@@ -3,10 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Waypoint : MonoBehaviour {
-
-    public bool isSpawner;
+    
     public Waypoint[] neighbours;
     public Color color = Color.black;
+
+    void Start()
+    {
+
+    }
 
     void OnDrawGizmos()
     {
@@ -24,4 +28,17 @@ public class Waypoint : MonoBehaviour {
             }
         }
     }
+
+    public virtual void WaypointReached(PersonMover mover)
+    {
+        // TESTING: this is how a semaphore should (aproximately) work
+        mover.SetCanMove(false);
+        StartCoroutine(Wait(mover));
+    }
+
+    private IEnumerator Wait(PersonMover mover)
+    {
+        yield return new WaitForSeconds(3);
+        mover.SetCanMove(true);
+    }   // TESTING
 }
