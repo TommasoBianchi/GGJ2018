@@ -2555,9 +2555,9 @@ GameObject:
   m_Component:
   - component: {fileID: 199811201}
   - component: {fileID: 199811204}
-  - component: {fileID: 199811203}
   - component: {fileID: 199811202}
-  m_Layer: 0
+  - component: {fileID: 199811203}
+  m_Layer: 11
   m_Name: Block4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2611,20 +2611,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &199811203
-MeshCollider:
+--- !u!61 &199811203
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 199811200}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &199811204
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -9621,9 +9632,9 @@ GameObject:
   m_Component:
   - component: {fileID: 749896834}
   - component: {fileID: 749896837}
-  - component: {fileID: 749896836}
   - component: {fileID: 749896835}
-  m_Layer: 0
+  - component: {fileID: 749896836}
+  m_Layer: 11
   m_Name: Block9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9677,20 +9688,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &749896836
-MeshCollider:
+--- !u!61 &749896836
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 749896833}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &749896837
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15062,9 +15084,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1182984945}
   - component: {fileID: 1182984948}
-  - component: {fileID: 1182984947}
   - component: {fileID: 1182984946}
-  m_Layer: 0
+  - component: {fileID: 1182984947}
+  m_Layer: 11
   m_Name: Block7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15118,20 +15140,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1182984947
-MeshCollider:
+--- !u!61 &1182984947
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1182984944}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &1182984948
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15772,9 +15805,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1227970816}
   - component: {fileID: 1227970819}
-  - component: {fileID: 1227970818}
   - component: {fileID: 1227970817}
-  m_Layer: 0
+  - component: {fileID: 1227970818}
+  m_Layer: 11
   m_Name: Block11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15828,20 +15861,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1227970818
-MeshCollider:
+--- !u!61 &1227970818
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1227970815}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &1227970819
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -16600,9 +16644,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1276814551}
   - component: {fileID: 1276814554}
-  - component: {fileID: 1276814553}
   - component: {fileID: 1276814552}
-  m_Layer: 0
+  - component: {fileID: 1276814553}
+  m_Layer: 11
   m_Name: Block12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16656,20 +16700,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1276814553
-MeshCollider:
+--- !u!61 &1276814553
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1276814550}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &1276814554
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18509,9 +18564,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1408234441}
   - component: {fileID: 1408234444}
-  - component: {fileID: 1408234443}
   - component: {fileID: 1408234442}
-  m_Layer: 0
+  - component: {fileID: 1408234443}
+  m_Layer: 11
   m_Name: Block6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18565,20 +18620,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1408234443
-MeshCollider:
+--- !u!61 &1408234443
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1408234440}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &1408234444
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19872,9 +19938,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1515121052}
   - component: {fileID: 1515121055}
-  - component: {fileID: 1515121054}
   - component: {fileID: 1515121053}
-  m_Layer: 0
+  - component: {fileID: 1515121054}
+  m_Layer: 11
   m_Name: Block10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19928,20 +19994,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1515121054
-MeshCollider:
+--- !u!61 &1515121054
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1515121051}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &1515121055
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -19958,9 +20035,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1517047400}
   - component: {fileID: 1517047403}
-  - component: {fileID: 1517047402}
   - component: {fileID: 1517047401}
-  m_Layer: 0
+  - component: {fileID: 1517047402}
+  m_Layer: 11
   m_Name: Block3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20014,20 +20091,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1517047402
-MeshCollider:
+--- !u!61 &1517047402
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1517047399}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &1517047403
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -20123,9 +20211,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1531696488}
   - component: {fileID: 1531696491}
-  - component: {fileID: 1531696490}
   - component: {fileID: 1531696489}
-  m_Layer: 0
+  - component: {fileID: 1531696490}
+  m_Layer: 11
   m_Name: Block1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20179,20 +20267,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1531696490
-MeshCollider:
+--- !u!61 &1531696490
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1531696487}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &1531696491
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -23392,9 +23491,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1807868857}
   - component: {fileID: 1807868860}
-  - component: {fileID: 1807868859}
   - component: {fileID: 1807868858}
-  m_Layer: 0
+  - component: {fileID: 1807868859}
+  m_Layer: 11
   m_Name: Block5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23448,20 +23547,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1807868859
-MeshCollider:
+--- !u!61 &1807868859
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1807868856}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &1807868860
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -24202,9 +24312,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1865543448}
   - component: {fileID: 1865543451}
-  - component: {fileID: 1865543450}
   - component: {fileID: 1865543449}
-  m_Layer: 0
+  - component: {fileID: 1865543450}
+  m_Layer: 11
   m_Name: Block8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24258,20 +24368,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1865543450
-MeshCollider:
+--- !u!61 &1865543450
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1865543447}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &1865543451
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -25440,9 +25561,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1982961490}
   - component: {fileID: 1982961493}
-  - component: {fileID: 1982961492}
   - component: {fileID: 1982961491}
-  m_Layer: 0
+  - component: {fileID: 1982961492}
+  m_Layer: 11
   m_Name: Block2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25496,20 +25617,31 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &1982961492
-MeshCollider:
+--- !u!61 &1982961492
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1982961489}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!33 &1982961493
 MeshFilter:
   m_ObjectHideFlags: 0
