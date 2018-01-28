@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayPause : MonoBehaviour {
 
@@ -19,13 +20,18 @@ public class PlayPause : MonoBehaviour {
     {
         if (isPaused)
         {
-            gameObject.transform.GetComponent<Image>().sprite = Play;
+            gameObject.transform.GetComponent<Image>().sprite = Pause;
             isPaused = false;
         }
         else
         {
-            gameObject.transform.GetComponent<Image>().sprite = Pause;
+            gameObject.transform.GetComponent<Image>().sprite = Play;
             isPaused = true;
         }
+    }
+
+    public void restart ()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
