@@ -24408,6 +24408,8 @@ MonoBehaviour:
   amountOfPeopleToSpawn: 50
   peoplePrefabs:
   - {fileID: 1890842701436234, guid: 761668809bbd31345a9dc317a555ff5b, type: 2}
+  - {fileID: 1870101461046074, guid: 403acc6744f6b264282d99224278e37c, type: 2}
+  - {fileID: 1722899811440470, guid: cfbe4babd94e941458ab606cb44c70dc, type: 2}
   amountOfVehiclesToSpawn: 25
   vehiclePrefabs:
   - {fileID: 1133513795110950, guid: 363bc40bbb1dfd84bb2a360dd919df78, type: 2}
@@ -33886,7 +33888,7 @@ Prefab:
     - target: {fileID: 224526972744485224, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 224669674195171858, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}
@@ -33906,7 +33908,7 @@ Prefab:
     - target: {fileID: 224669674195171858, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 224728096636296828, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}
@@ -33926,7 +33928,7 @@ Prefab:
     - target: {fileID: 224728096636296828, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 224526972744485224, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}

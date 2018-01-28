@@ -16,11 +16,14 @@ public class Mover : MonoBehaviour {
 
     protected bool randomTargetDisplacement;
     protected bool randomizeSpeed;
+
+    private Animator animator;
     
 	void Start ()
     {
         canMove = true;
         randomTargetDisplacement = true;
+        animator = GetComponentInChildren<Animator>();
     }
 
     void Update()
@@ -41,7 +44,14 @@ public class Mover : MonoBehaviour {
             transform.Rotate(0, 0, Mathf.Max(-turningSpeed * Time.deltaTime, angle));
         }
 
-        if (!canMove) return;
+        if (!canMove)
+        {
+            if (animator != null)
+                animator.SetBool("isMoving", false);
+            return;
+        }
+        if (animator != null)
+            animator.SetBool("isMoving", true);
 
         if ((transform.position - currentWaypointTargetPosition).sqrMagnitude < 0.1f * 0.1f)
         {
