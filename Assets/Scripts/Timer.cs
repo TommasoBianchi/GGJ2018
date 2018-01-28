@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour {
 
-    public float totalTime;
+    public int totalTime;
     private float timeLeft;
     public GameObject text;
 
@@ -19,9 +19,12 @@ public class Timer : MonoBehaviour {
 
     private void Clock()
     {
-         timeLeft = totalTime - Time.time;
-         min = timeLeft % 60;
-         sec = 0.6f * ((timeLeft / 60) - min);
+        int time = (int)Time.time;
+
+         timeLeft = totalTime - time;
+         sec = timeLeft % 60;
+         min = (int)(timeLeft - sec) / 60;
+         
 
          text.transform.GetComponent<Text>().text = min.ToString() + " : " + sec.ToString();
         //timeLeft = (totalTime - Time.time);

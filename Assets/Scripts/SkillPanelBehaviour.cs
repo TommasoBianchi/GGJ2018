@@ -12,7 +12,7 @@ public class SkillPanelBehaviour : MonoBehaviour {
 
     private float endCd;
     private float cd;
-    private bool ready;
+    public bool ready;
     
 
     void Start () {
@@ -23,22 +23,24 @@ public class SkillPanelBehaviour : MonoBehaviour {
 	
 	
 	void Update () {
-        if (ready)
-        {
-            timeCD();
-        }
+        endCd = Canvas.GetComponent<UIMAnager1>().offCd1;
+        cd = Canvas.GetComponent<UIMAnager1>().cd;
+        timeCD(); 
 	}
 
     public void timeCD ()
     {
         float fillAmount;
         fillAmount = 1 - ((endCd - Time.time) / cd);
+       // Debug.Log(fillAmount);
         skill1.transform.GetComponent<Image>().fillAmount = fillAmount;
-        if (fillAmount == 1)
+        if (fillAmount > 1)
         {
-            ready = false;
-            skill1.transform.GetComponent<Image>().fillAmount = 0;
+            skill1.SetActive(false);
         }
-
+        else
+        {
+            skill1.SetActive(true);
+        }
     }
 }

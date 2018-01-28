@@ -115,6 +115,7 @@ public class UIMAnager1 : MonoBehaviour {
                     activeIcon[0].SetActive(true);
                     iconOnMouse = 0;
                     trashBin.SetActive(true);
+                    //skillPanels[1].transform.GetComponent<SkillPanelBehaviour>().ready = false;
                 }
                 break;
             case 2:
@@ -284,13 +285,11 @@ public class UIMAnager1 : MonoBehaviour {
             Time.timeScale = 0;
             paused = true;
         }
-    }
-    public void Play()
-    {
-        if (paused)
+        else
         {
             Time.timeScale = 1;
             paused = false;
         }
     }
+    
 }
