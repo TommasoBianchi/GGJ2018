@@ -12,6 +12,10 @@ public class VehicleMover : Mover {
 
     private float acceleration = 5f;
     private float maxSpeed = 5f;
+
+    private float maxTimeWaiting = 25;
+    private float timeWaiting = 0;
+    private bool canRaycast = true;
     
 	void Start ()
     {
@@ -31,7 +35,7 @@ public class VehicleMover : Mover {
 	
 	void Update ()
     {
-        if (Time.time > nextRaycastTime)
+        if (canRaycast && Time.time > nextRaycastTime)
         {
             RaycastCollisions();
             nextRaycastTime = Time.time + 1.0f / raycastPerSecond;
@@ -51,6 +55,20 @@ public class VehicleMover : Mover {
 
     void RaycastCollisions()
     {
+        timeWaiting += 1.0f / raycastPerSecond;
+        if (timeWaiting > maxTimeWaiting)
+        {
+            Debug.LogWarning("Vehicle " + name + " has been found to be stuck (deadlocked). Now ignoring collisions.");
+            acceleration = Mathf.Abs(acceleration);
+            canRaycast = false;
+            new System.Threading.Thread(() => {
+                System.Threading.Thread.Sleep(10 * 1000); // Wait ten seconds
+                canRaycast = true;
+                timeWaiting = 0;
+            }).Start();
+            return;
+        }
+
         Vector2 origin = transform.position + transform.right * 1.2f;
         Vector2[] directions =
         {
@@ -73,6 +91,7 @@ public class VehicleMover : Mover {
             }
         }
 
+        timeWaiting = 0;
         acceleration = Mathf.Abs(acceleration);
     } 
 
