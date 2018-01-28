@@ -11976,11 +11976,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 900963960}
-  maxTime: 5
-  killsToWin: 30
+  maxTime: 180
+  killsToWin: 20
   victoryPanel: {fileID: 1283509238}
   gameOverPanel: {fileID: 43965223}
-  nextScene: MainMenu
+  nextScene: Level2
 --- !u!1 &682884479
 GameObject:
   m_ObjectHideFlags: 0
@@ -25680,7 +25680,7 @@ MonoBehaviour:
   amountOfVehiclesToSpawn: 25
   vehiclePrefabs:
   - {fileID: 1133513795110950, guid: 363bc40bbb1dfd84bb2a360dd919df78, type: 2}
-  percentageOfObstaclesToRemove: 0.5
+  percentageOfObstaclesToRemove: 0
 --- !u!4 &1499929980
 Transform:
   m_ObjectHideFlags: 0
