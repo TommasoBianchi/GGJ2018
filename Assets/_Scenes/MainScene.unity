@@ -25335,6 +25335,7 @@ MonoBehaviour:
   amountOfVehiclesToSpawn: 25
   vehiclePrefabs:
   - {fileID: 1133513795110950, guid: 363bc40bbb1dfd84bb2a360dd919df78, type: 2}
+  percentageOfObstaclesToRemove: 0.5
 --- !u!4 &1499929980
 Transform:
   m_ObjectHideFlags: 0
@@ -35177,6 +35178,21 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 224989978670025566, guid: f7a3344cf6242b74aa7f10543c7470a4,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 303.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224940094334195738, guid: f7a3344cf6242b74aa7f10543c7470a4,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 224940094334195738, guid: f7a3344cf6242b74aa7f10543c7470a4,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 1293887240594162, guid: f7a3344cf6242b74aa7f10543c7470a4, type: 2}
       propertyPath: m_IsActive
       value: 0
@@ -35247,10 +35263,6 @@ Prefab:
     - target: {fileID: 224728096636296828, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1224179124507306, guid: f7a3344cf6242b74aa7f10543c7470a4, type: 2}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

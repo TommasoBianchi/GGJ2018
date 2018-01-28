@@ -9,6 +9,8 @@ public class Spawner : MonoBehaviour {
 
     public int amountOfVehiclesToSpawn;
     public GameObject[] vehiclePrefabs;
+
+    public float percentageOfObstaclesToRemove = 0;
     
 	void Start ()
     {
@@ -36,6 +38,21 @@ public class Spawner : MonoBehaviour {
             GameObject prefab = vehiclePrefabs[Random.Range(0, vehiclePrefabs.Length)];
             GameObject go = Instantiate(prefab, waypoint.transform.position, Quaternion.identity);
             go.GetComponent<VehicleMover>().SetWaypoint(waypoint);
+        }
+
+        ActivateObstacole[] obstacles = FindObjectsOfType<ActivateObstacole>();
+        // Shuffle the obstacles (Fisher-Yates)
+        for (int i = obstacles.Length - 1; i >= 1; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            ActivateObstacole tmp = obstacles[i];
+            obstacles[i] = obstacles[j];
+            obstacles[j] = tmp;
+        }
+        int obstaclesToRemove = Mathf.FloorToInt(obstacles.Length * percentageOfObstaclesToRemove);
+        for (int i = 0; i < obstaclesToRemove && i < obstacles.Length; i++)
+        {
+            Destroy(obstacles[i].gameObject);
         }
 	}
 }
