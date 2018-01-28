@@ -163,7 +163,6 @@ GameObject:
   - component: {fileID: 223300969984246778}
   - component: {fileID: 114236453802964936}
   - component: {fileID: 114295452894019148}
-  - component: {fileID: 114583696700772682}
   m_Layer: 5
   m_Name: Panel (3)
   m_TagString: Untagged
@@ -294,7 +293,6 @@ GameObject:
   - component: {fileID: 223207079852656100}
   - component: {fileID: 114323757756575452}
   - component: {fileID: 114632857525658452}
-  - component: {fileID: 114082015833189622}
   m_Layer: 5
   m_Name: Panel (2)
   m_TagString: Untagged
@@ -1004,24 +1002,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114082015833189622
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1293887240594162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14041a4cc60ac374cadcd44d927d4866, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skill1: {fileID: 1110793875605654}
-  skill2: {fileID: 1642193105444776}
-  skill3: {fileID: 1459874098532198}
-  Canvas: {fileID: 1875488847779564}
-  skillPanel: 2
-  personType: 0
-  ready: 0
 --- !u!114 &114091177883750794
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1552,7 +1532,7 @@ MonoBehaviour:
   skill3: {fileID: 1786529088123630}
   Canvas: {fileID: 1875488847779564}
   skillPanel: 3
-  personType: 0
+  personType: 1
   ready: 0
 --- !u!114 &114323757756575452
 MonoBehaviour:
@@ -2126,24 +2106,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114583696700772682
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1203599517329562}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14041a4cc60ac374cadcd44d927d4866, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skill1: {fileID: 1835221647621878}
-  skill2: {fileID: 1762712758025702}
-  skill3: {fileID: 1786529088123630}
-  Canvas: {fileID: 1875488847779564}
-  skillPanel: 3
-  personType: 0
-  ready: 0
 --- !u!114 &114614324642630254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2241,7 +2203,7 @@ MonoBehaviour:
   skill3: {fileID: 1459874098532198}
   Canvas: {fileID: 1875488847779564}
   skillPanel: 2
-  personType: 0
+  personType: 2
   ready: 0
 --- !u!114 &114643077275486888
 MonoBehaviour:
@@ -3820,7 +3782,7 @@ RectTransform:
   m_GameObject: {fileID: 1024857716111758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.40000805, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224399889847089722}
   m_RootOrder: 2
@@ -3828,7 +3790,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.75}
   m_AnchorMax: {x: 0.5, y: 0.75}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 170, y: 35}
+  m_SizeDelta: {x: 50, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224267856027292412
 RectTransform:
@@ -4271,7 +4233,7 @@ RectTransform:
   m_GameObject: {fileID: 1660461127657680}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.40000808, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224399889847089722}
   m_RootOrder: 3
@@ -4279,7 +4241,7 @@ RectTransform:
   m_AnchorMin: {x: 0.8, y: 0.75}
   m_AnchorMax: {x: 0.8, y: 0.75}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 170, y: 35}
+  m_SizeDelta: {x: 50, y: 125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224780979383159924
 RectTransform:
