@@ -40,7 +40,8 @@ public class UIMAnager1 : MonoBehaviour {
     private int skill3LastUseKill3;
     private int iconOnMouse;
     private bool paused; //Game status
-    
+
+    private System.Action OnSkillLaunched;
 
     private void Start()
     {
@@ -91,6 +92,8 @@ public class UIMAnager1 : MonoBehaviour {
         Attractor.GetComponent<Attracor>().skillType = currentSkill;
         activeIcon[iconOnMouse].SetActive(false);
         trashBin.SetActive(false);
+        OnSkillLaunched();
+
     }
 
     public void TrashSkill ()
@@ -111,7 +114,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 1;
                     currentSkillType = type;
-                    offCd1 = Time.time + cd;
+                    OnSkillLaunched = () => offCd1 = Time.time + cd;
                     activeIcon[0].SetActive(true);
                     iconOnMouse = 0;
                     trashBin.SetActive(true);
@@ -124,7 +127,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 1;
                     currentSkillType = type;
-                    offCd2 = Time.time + cd;
+                    OnSkillLaunched = () => offCd2 = Time.time + cd;
                     activeIcon[3].SetActive(true);
                     iconOnMouse = 3;
                     trashBin.SetActive(true);
@@ -136,7 +139,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 1;
                     currentSkillType = type;
-                    offCd3 = Time.time + cd;
+                    OnSkillLaunched = () => offCd3 = Time.time + cd;
                     activeIcon[6].SetActive(true);
                     iconOnMouse = 6;
                     trashBin.SetActive(true);
@@ -156,7 +159,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 2;
                     currentSkillType = type;
-                    skill2LastUseKill1 = killCount;
+                    OnSkillLaunched = () => skill2LastUseKill1 = killCount;
                     activeIcon[1].SetActive(true);
                     iconOnMouse = 1;
                     trashBin.SetActive(true);
@@ -168,7 +171,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 2;
                     currentSkillType = type;
-                    skill2LastUseKill2 = killCount;
+                    OnSkillLaunched = () => skill2LastUseKill2 = killCount;
                     activeIcon[4].SetActive(true);
                     iconOnMouse = 4;
                     trashBin.SetActive(true);
@@ -180,7 +183,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 2;
                     currentSkillType = type;
-                    skill2LastUseKill3 = killCount;
+                    OnSkillLaunched = () => skill2LastUseKill3 = killCount;
                     activeIcon[7].SetActive(true);
                     iconOnMouse = 7;
                     trashBin.SetActive(true);
@@ -200,7 +203,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 3;
                     currentSkillType = type;
-                    skill3LastUseKill1 = killCount;
+                    OnSkillLaunched = () => skill3LastUseKill1 = killCount;
                     activeIcon[2].SetActive(true);
                     iconOnMouse = 2;
                     trashBin.SetActive(true);
@@ -212,7 +215,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 3;
                     currentSkillType = type;
-                    skill3LastUseKill2 = killCount;
+                    OnSkillLaunched = () => skill3LastUseKill2 = killCount;
                     activeIcon[5].SetActive(true);
                     iconOnMouse = 5;
                     trashBin.SetActive(true);
@@ -224,7 +227,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 3;
                     currentSkillType = type;
-                    skill3LastUseKill3 = killCount;
+                    OnSkillLaunched = () => skill3LastUseKill3 = killCount;
                     activeIcon[8].SetActive(true);
                     iconOnMouse = 8;
                     trashBin.SetActive(true);
@@ -291,5 +294,7 @@ public class UIMAnager1 : MonoBehaviour {
             paused = false;
         }
     }
+
+
     
 }
