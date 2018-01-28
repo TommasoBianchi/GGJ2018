@@ -187,6 +187,8 @@ MonoBehaviour:
     m_Bits: 24832
   dieTime: 1
   personType: 1
+  bloodPrefab: {fileID: 1876742721204196, guid: 3df298ca90dcd2a4a90ab45a1342643b,
+    type: 2}
 --- !u!114 &114747343665427302
 MonoBehaviour:
   m_ObjectHideFlags: 1

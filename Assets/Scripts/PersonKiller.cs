@@ -9,6 +9,8 @@ public class PersonKiller : MonoBehaviour {
 
     public GameManager.PersonType personType;
 
+    public GameObject bloodPrefab;
+
     private bool isAlive;
     private SpriteRenderer spriteRenderer;
     private float dieTimer = 0f;
@@ -40,7 +42,11 @@ public class PersonKiller : MonoBehaviour {
     {
         if (((1 << collision.gameObject.layer) & thingsThatKillPeople.value) != 0)
         {
-            isAlive = false;
+            if (isAlive)
+            {
+                isAlive = false;
+                Instantiate(bloodPrefab, transform.position - new Vector3(0, 0, 0.75f), Quaternion.Euler(0, 0, Random.Range(0, 360f)));
+            }
         }
     }
 }
