@@ -9,6 +9,7 @@ public class SkillPanelBehaviour : MonoBehaviour {
     public GameObject skill2;
     public GameObject skill3;
     public GameObject Canvas;
+    public int skillPanel;
 
     private float endCd;
     private float cd;
@@ -16,15 +17,13 @@ public class SkillPanelBehaviour : MonoBehaviour {
     
 
     void Start () {
-        endCd = Canvas.GetComponent<UIMAnager1>().offCd1;
         cd = Canvas.GetComponent<UIMAnager1>().cd;
         ready = true;
     }
 	
 	
 	void Update () {
-        endCd = Canvas.GetComponent<UIMAnager1>().offCd1;
-        cd = Canvas.GetComponent<UIMAnager1>().cd;
+        Setup();
         timeCD(); 
 	}
 
@@ -41,6 +40,25 @@ public class SkillPanelBehaviour : MonoBehaviour {
         else
         {
             skill1.SetActive(true);
+        }
+    }
+
+    private void Setup ()
+    {
+        switch (skillPanel)
+        {
+            case 1:
+                endCd = Canvas.GetComponent<UIMAnager1>().offCd1;
+                
+                break;
+            case 2:
+                endCd = Canvas.GetComponent<UIMAnager1>().offCd2;
+                
+                break;
+            case 3:
+                endCd = Canvas.GetComponent<UIMAnager1>().offCd3;
+
+                    break;
         }
     }
 }
