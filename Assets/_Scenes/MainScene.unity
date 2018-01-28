@@ -25146,7 +25146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44829727eccdea84eb092020900e8292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  amountOfPeopleToSpawn: 50
+  amountOfPeopleToSpawn: 60
   peoplePrefabs:
   - {fileID: 1890842701436234, guid: 761668809bbd31345a9dc317a555ff5b, type: 2}
   - {fileID: 1870101461046074, guid: 403acc6744f6b264282d99224278e37c, type: 2}
@@ -34787,7 +34787,7 @@ Prefab:
     - target: {fileID: 224526972744485224, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -70
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224669674195171858, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}
@@ -34807,7 +34807,7 @@ Prefab:
     - target: {fileID: 224669674195171858, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -70
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224728096636296828, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}
@@ -34827,7 +34827,7 @@ Prefab:
     - target: {fileID: 224728096636296828, guid: f7a3344cf6242b74aa7f10543c7470a4,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -70
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f7a3344cf6242b74aa7f10543c7470a4, type: 2}
