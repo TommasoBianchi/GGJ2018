@@ -53,6 +53,17 @@ public class Attracor : MonoBehaviour {
         {
             for(i=0;i<Neighbours.Length;i++)
             {
+                if (skillType == 3)
+                {
+                    Neighbours[i].GetComponent<Mover>().enabled = false;
+                    Neighbours[i].GetComponent<BackOnTrack>().enabled = false;
+                    Neighbours[i].GetComponent<AttractionMover>().enabled = true;
+                    Neighbours[i].GetComponent<AttractionMover>().attractorLocation = transform.position;
+                    Neighbours[i].GetComponent<AttractionMover>().attraction = true;
+                    Neighbours[i].gameObject.layer = LayerMask.NameToLayer("AttractedPerson");
+                    continue;
+                }
+                
                 if (Neighbours[i].tag == attractive)
                 {
                     Neighbours[i].GetComponent<Mover>().enabled = false;
@@ -80,11 +91,17 @@ public class Attracor : MonoBehaviour {
             {
                 if (Neighbours[i] == null)
                 {
-                    return;
+                    continue;
                 }
                 else
                 {
                     if (Neighbours[i].tag == attractive || Neighbours[i].tag == repulsive)
+                    {
+                        Neighbours[i].GetComponent<BackOnTrack>().enabled = true;
+                        Neighbours[i].GetComponent<AttractionMover>().enabled = false;
+                        Neighbours[i].gameObject.layer = LayerMask.NameToLayer("Person");
+                    }
+                    if (skillType == 3)
                     {
                         Neighbours[i].GetComponent<BackOnTrack>().enabled = true;
                         Neighbours[i].GetComponent<AttractionMover>().enabled = false;
