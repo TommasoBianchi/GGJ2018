@@ -107,6 +107,9 @@ public class UIMAnager1 : MonoBehaviour {
         aiming = false;
         ready = false;
         trashBin.SetActive(false);
+        activeIcon[9].SetActive(false);
+        activeIcon[10].SetActive(false);
+        activeIcon[11].SetActive(false);
     }
 
     private void UseSkill1(int type)

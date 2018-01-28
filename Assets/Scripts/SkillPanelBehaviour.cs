@@ -31,7 +31,9 @@ public class SkillPanelBehaviour : MonoBehaviour {
 	
 	void Update () {
         Setup();
-        timeCD(); 
+        timeCD();
+        Skill2CD();
+        Skill3CD();
 	}
 
     public void timeCD ()
