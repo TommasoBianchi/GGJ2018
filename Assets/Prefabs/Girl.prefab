@@ -39,9 +39,10 @@ GameObject:
   - component: {fileID: 114625707195593260}
   - component: {fileID: 50789280620424252}
   - component: {fileID: 58908398138557028}
+  - component: {fileID: 114182021181274594}
   m_Layer: 9
   m_Name: Girl
-  m_TagString: gamer
+  m_TagString: fashion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,6 +157,22 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114182021181274594
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1722899811440470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f7c447850a36e448665076f792e20c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thingsThatKillPeople:
+    serializedVersion: 2
+    m_Bits: 256
+  dieTime: 1
+  personType: 2
 --- !u!114 &114486850441423170
 MonoBehaviour:
   m_ObjectHideFlags: 1

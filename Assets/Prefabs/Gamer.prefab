@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 114967590292164312}
   - component: {fileID: 50924043873232434}
   - component: {fileID: 58734689082124950}
+  - component: {fileID: 114755066530741430}
   m_Layer: 9
   m_Name: Gamer
   m_TagString: gamer
@@ -182,6 +183,22 @@ MonoBehaviour:
   attractorLocation: {x: 0, y: 0, z: 0}
   attraction: 0
   croudArea: 0.5
+--- !u!114 &114755066530741430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1890842701436234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6f7c447850a36e448665076f792e20c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thingsThatKillPeople:
+    serializedVersion: 2
+    m_Bits: 256
+  dieTime: 1
+  personType: 0
 --- !u!114 &114967590292164312
 MonoBehaviour:
   m_ObjectHideFlags: 1
