@@ -89,12 +89,12 @@ public class UIMAnager1 : MonoBehaviour {
 
         Aim.z = 0;
         Attractor = Instantiate(Disractor, Aim, Quaternion.identity);
+        Attractor.transform.GetComponentInChildren<SpriteRenderer>().sprite = activeIcon[(currentSkillType - 1) * 3 + (currentSkill - 1)].GetComponent<Image>().sprite;
         Attractor.GetComponent<Attracor>().type = currentSkillType;
         Attractor.GetComponent<Attracor>().skillType = currentSkill;
         activeIcon[iconOnMouse].SetActive(false);
         trashBin.SetActive(false);
         OnSkillLaunched();
-        
 
     }
 

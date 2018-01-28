@@ -15,6 +15,8 @@ public class Attracor : MonoBehaviour {
     private string attractive;
     private string repulsive;
 
+    private GameManager.PersonType personType;
+
     // Use this for initialization
     void Start()
     {
@@ -119,16 +121,19 @@ public class Attracor : MonoBehaviour {
         {
             attractive = "gamer";
             repulsive = "fashion";
+            personType = GameManager.PersonType.Gamer;
         }
         else if (type == 2)
         {
             attractive = "fashion";
             repulsive = "sport";
+            personType = GameManager.PersonType.Girl;
         }
         else
         {
             attractive = "sport";
             repulsive = "gamer";
+            personType = GameManager.PersonType.Sportman;
         }
 
         if (skillType == 1)
@@ -140,6 +145,7 @@ public class Attracor : MonoBehaviour {
         {
             range = 12;
             duration = 8;
+            GameManager.ConsumeKillPoints(personType);
         }
         else
         {
