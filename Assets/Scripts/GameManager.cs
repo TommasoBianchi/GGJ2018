@@ -34,10 +34,10 @@ public static class GameManager {
         killPoints[personType] += 1;
     }
 
-    public static void ConsumeKillPoints(PersonType personType, int amount)
+    public static void ConsumeKillPoints(PersonType personType)
     {
-        if (killPoints[personType] < amount)
-            Debug.LogError("You cannot use " + amount + " kill points for " + personType + " because you only have " + killPoints[personType]);
-        killPoints[personType] -= amount;
+        if (killPoints[personType] < 0)
+            Debug.LogError("You cannot use kill points for " + personType + " because you only have " + killPoints[personType]);
+        killPoints[personType] = 0;
     }
 }
