@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212843037457085988}
   - component: {fileID: 114925811578330036}
   - component: {fileID: 61885917097561784}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Hydrant
   m_TagString: Untagged
   m_Icon: {fileID: 0}

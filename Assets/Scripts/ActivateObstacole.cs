@@ -13,7 +13,6 @@ public class ActivateObstacole : MonoBehaviour {
     void Start()
     {
         if (spriteRenderer) normalSprite = spriteRenderer.sprite;
-        Activate();
     }
     
 	public void Activate()
@@ -26,7 +25,7 @@ public class ActivateObstacole : MonoBehaviour {
         {
             spriteRenderer.color = Color.white;
         }
-        gameObject.layer = LayerMask.NameToLayer("Obstacole");
+        gameObject.layer = LayerMask.NameToLayer("ActiveObstacle");
     }
 
     public void Deactivate()
@@ -39,6 +38,6 @@ public class ActivateObstacole : MonoBehaviour {
         {
             spriteRenderer.color = disabledColor;
         }
-        gameObject.layer = LayerMask.NameToLayer("Default");
+        gameObject.layer = LayerMask.NameToLayer("Obstacle");
     }
 }

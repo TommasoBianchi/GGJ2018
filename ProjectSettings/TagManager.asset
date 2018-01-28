@@ -21,8 +21,8 @@ TagManager:
   - Pavement
   - Building
   - AttractedPerson
-  - Manhole
-  - Obstacole
+  - ActiveObstacle
+  - Obstacle
   - 
   - 
   - 
