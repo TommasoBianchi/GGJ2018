@@ -17,6 +17,8 @@ public class SemaphoreLight : MonoBehaviour {
     
 	public void ChangeLight(Semaphore.SemaphoreType greenType)
     {
+        if (spriteRenderer == null) spriteRenderer = GetComponent<SpriteRenderer>();
+
         if (greenType == type)
         {
             spriteRenderer.sprite = greenSemaphore;
