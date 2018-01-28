@@ -25,7 +25,6 @@ public class PersonKiller : MonoBehaviour {
         {
             Color color = spriteRenderer.color;
             color.a = (dieTime - dieTimer) / dieTime;
-            Debug.Log(color);
             spriteRenderer.color = color;
             
             dieTimer += Time.deltaTime;
