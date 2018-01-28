@@ -32,12 +32,12 @@ public class UIMAnager1 : MonoBehaviour {
     public float offCd1; //tme at witch each first skill of each people kind will be ready
     public float offCd2;
     public float offCd3;
-    private int skill2LastUseKill1; //kill count at the moment of use of skill 2 in each kind of people
-    private int skill2LastUseKill2;
-    private int skill2LastUseKill3;
-    private int skill3LastUseKill1; //kill count at the momento of use of skill 3 in each kind of people
-    private int skill3LastUseKill2;
-    private int skill3LastUseKill3;
+    public int skill2LastUseKill1; //kill count at the whitch the skill will be ready
+    public int skill2LastUseKill2;
+    public int skill2LastUseKill3;
+    public int skill3LastUseKill1; //kill count at the whitch the skill will be ready
+    public int skill3LastUseKill2;
+    public int skill3LastUseKill3;
     private int iconOnMouse;
     private bool paused; //Game status
 
@@ -56,7 +56,8 @@ public class UIMAnager1 : MonoBehaviour {
 
     private void Update()
     {
-        ListenForClick();  
+        ListenForClick();
+        killCount = GameManager.killCounter;
     }
 
     private void ListenForClick()
@@ -159,7 +160,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 2;
                     currentSkillType = type;
-                    OnSkillLaunched = () => skill2LastUseKill1 = killCount;
+                    OnSkillLaunched = () => skill2LastUseKill1 = killCount + skill2Kill;
                     activeIcon[1].SetActive(true);
                     iconOnMouse = 1;
                     trashBin.SetActive(true);
@@ -171,7 +172,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 2;
                     currentSkillType = type;
-                    OnSkillLaunched = () => skill2LastUseKill2 = killCount;
+                    OnSkillLaunched = () => skill2LastUseKill2 = killCount + skill2Kill;
                     activeIcon[4].SetActive(true);
                     iconOnMouse = 4;
                     trashBin.SetActive(true);
@@ -183,7 +184,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 2;
                     currentSkillType = type;
-                    OnSkillLaunched = () => skill2LastUseKill3 = killCount;
+                    OnSkillLaunched = () => skill2LastUseKill3 = killCount + skill2Kill;
                     activeIcon[7].SetActive(true);
                     iconOnMouse = 7;
                     trashBin.SetActive(true);
@@ -203,7 +204,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 3;
                     currentSkillType = type;
-                    OnSkillLaunched = () => skill3LastUseKill1 = killCount;
+                    OnSkillLaunched = () => skill3LastUseKill1 = killCount + skill3Kill;
                     activeIcon[2].SetActive(true);
                     iconOnMouse = 2;
                     trashBin.SetActive(true);
@@ -215,7 +216,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 3;
                     currentSkillType = type;
-                    OnSkillLaunched = () => skill3LastUseKill2 = killCount;
+                    OnSkillLaunched = () => skill3LastUseKill2 = killCount + skill3Kill;
                     activeIcon[5].SetActive(true);
                     iconOnMouse = 5;
                     trashBin.SetActive(true);
@@ -227,7 +228,7 @@ public class UIMAnager1 : MonoBehaviour {
                     aiming = true;
                     currentSkill = 3;
                     currentSkillType = type;
-                    OnSkillLaunched = () => skill3LastUseKill3 = killCount;
+                    OnSkillLaunched = () => skill3LastUseKill3 = killCount + skill3Kill;
                     activeIcon[8].SetActive(true);
                     iconOnMouse = 8;
                     trashBin.SetActive(true);
