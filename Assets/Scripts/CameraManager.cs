@@ -7,11 +7,7 @@ public class CameraManager : MonoBehaviour {
     public Bounds cameraWorldBounds;
     public float speed;
     public Bounds screenBounds;
-    
-	void Start ()
-    {
-		
-	}
+    public float cameraScrollBackStrength;
 	
 	void Update ()
     {
@@ -46,7 +42,7 @@ public class CameraManager : MonoBehaviour {
             Vector3 closestPoint = cameraWorldBounds.ClosestPoint(transform.position);
             closestPoint.z = transform.position.z;
             Vector3 dir = (closestPoint - transform.position).normalized;
-            transform.Translate(minDist * dir * speed * Time.deltaTime);
+            transform.Translate(minDist * dir * cameraScrollBackStrength * speed * Time.deltaTime);
         }
     }
 }
