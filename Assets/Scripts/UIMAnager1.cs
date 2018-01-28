@@ -94,6 +94,8 @@ public class UIMAnager1 : MonoBehaviour {
         Attractor.GetComponent<Attracor>().skillType = currentSkill;
         activeIcon[iconOnMouse].SetActive(false);
         activeIcon[9].SetActive(false);
+        activeIcon[10].SetActive(false);
+        activeIcon[11].SetActive(false);
         trashBin.SetActive(false);
         OnSkillLaunched();
 
@@ -135,8 +137,8 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkillType = type;
                     OnSkillLaunched = () => offCd2 = Time.time + cd;
                     activeIcon[3].SetActive(true);
-                    activeIcon[9].SetActive(true);
-                    activeIcon[9].transform.localScale = scale;
+                    activeIcon[10].SetActive(true);
+                    activeIcon[10].transform.localScale = scale;
                     iconOnMouse = 3;
                     trashBin.SetActive(true);
                 }
@@ -149,8 +151,8 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkillType = type;
                     OnSkillLaunched = () => offCd3 = Time.time + cd;
                     activeIcon[6].SetActive(true);
-                    activeIcon[9].SetActive(true);
-                    activeIcon[9].transform.localScale = scale;
+                    activeIcon[11].SetActive(true);
+                    activeIcon[11].transform.localScale = scale;
                     iconOnMouse = 6;
                     trashBin.SetActive(true);
                 }
@@ -186,8 +188,8 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkillType = type;
                     OnSkillLaunched = () => skill2LastUseKill2 = killCount + skill2Kill;
                     activeIcon[4].SetActive(true);
-                    activeIcon[9].SetActive(true);
-                    activeIcon[9].transform.localScale = scale;
+                    activeIcon[10].SetActive(true);
+                    activeIcon[10].transform.localScale = scale;
                     iconOnMouse = 4;
                     trashBin.SetActive(true);
                 }
@@ -200,8 +202,8 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkillType = type;
                     OnSkillLaunched = () => skill2LastUseKill3 = killCount + skill2Kill;
                     activeIcon[7].SetActive(true);
-                    activeIcon[9].SetActive(true);
-                    activeIcon[9].transform.localScale = scale;
+                    activeIcon[11].SetActive(true);
+                    activeIcon[11].transform.localScale = scale;
                     iconOnMouse = 7;
                     trashBin.SetActive(true);
                 }
@@ -237,8 +239,8 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkillType = type;
                     OnSkillLaunched = () => skill3LastUseKill2 = killCount + skill3Kill;
                     activeIcon[5].SetActive(true);
-                    activeIcon[9].SetActive(true);
-                    activeIcon[9].transform.localScale = scale;
+                    activeIcon[10].SetActive(true);
+                    activeIcon[10].transform.localScale = scale;
                     iconOnMouse = 5;
                     trashBin.SetActive(true);
                 }
@@ -251,8 +253,8 @@ public class UIMAnager1 : MonoBehaviour {
                     currentSkillType = type;
                     OnSkillLaunched = () => skill3LastUseKill3 = killCount + skill3Kill;
                     activeIcon[8].SetActive(true);
-                    activeIcon[9].SetActive(true);
-                    activeIcon[9].transform.localScale = scale;
+                    activeIcon[11].SetActive(true);
+                    activeIcon[11].transform.localScale = scale;
                     iconOnMouse = 8;
                     trashBin.SetActive(true);
                 }
