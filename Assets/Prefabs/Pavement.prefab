@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 212081008414047668}
   - component: {fileID: 114611143155730638}
   - component: {fileID: 58927490311226556}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: StreetLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 212082961719929908}
   - component: {fileID: 114132171703663972}
   - component: {fileID: 58712485691723386}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: StreetLight (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 212262925047320890}
   - component: {fileID: 114589688778767450}
   - component: {fileID: 58980870783621866}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: StreetLight (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 212183233357360876}
   - component: {fileID: 114696250087791272}
   - component: {fileID: 58482865186814400}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: StreetLight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

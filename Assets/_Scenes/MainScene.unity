@@ -2716,7 +2716,7 @@ GameObject:
   - component: {fileID: 155971531}
   - component: {fileID: 155971530}
   - component: {fileID: 155971529}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Manhole (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28746,7 +28746,7 @@ GameObject:
   - component: {fileID: 1677027093}
   - component: {fileID: 1677027092}
   - component: {fileID: 1677027091}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Manhole (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28931,7 +28931,7 @@ GameObject:
   - component: {fileID: 1684172882}
   - component: {fileID: 1684172884}
   - component: {fileID: 1684172883}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Manhole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32670,7 +32670,7 @@ GameObject:
   - component: {fileID: 1857577147}
   - component: {fileID: 1857577146}
   - component: {fileID: 1857577145}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Manhole (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35115,64 +35115,8 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224526972744485224, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224526972744485224, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224526972744485224, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 141.66667
-      objectReference: {fileID: 0}
-    - target: {fileID: 224526972744485224, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224669674195171858, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224669674195171858, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224669674195171858, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 425
-      objectReference: {fileID: 0}
-    - target: {fileID: 224669674195171858, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224728096636296828, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchorMin.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224728096636296828, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 224728096636296828, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 708.3334
-      objectReference: {fileID: 0}
-    - target: {fileID: 224728096636296828, guid: f7a3344cf6242b74aa7f10543c7470a4,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
+    - target: {fileID: 1280760650534236, guid: f7a3344cf6242b74aa7f10543c7470a4, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

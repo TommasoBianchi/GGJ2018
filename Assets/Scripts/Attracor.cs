@@ -39,6 +39,7 @@ public class Attracor : MonoBehaviour {
     {
         WhoIsAroud();
         SetMode();
+        ActivateObstacles();
     }
 
     private void WhoIsAroud ()
@@ -111,6 +112,9 @@ public class Attracor : MonoBehaviour {
                     }
                 }
             }
+
+            DeactivateObstacles();
+
             Destroy(gameObject);
         }
     }
@@ -151,6 +155,33 @@ public class Attracor : MonoBehaviour {
         {
             range = 20;
             duration = 10;
+        }
+    }
+    private void ActivateObstacles()
+    {
+        for (int i = 0; i < Neighbours.Length; i++)
+        {
+            if (Neighbours[i] == null) continue;
+
+            ActivateObstacole obstacle = Neighbours[i].GetComponent<ActivateObstacole>();
+            if (obstacle != null)
+            {
+                obstacle.Activate();
+            }
+        }
+    }
+
+    private void DeactivateObstacles()
+    {
+        for (int i = 0; i < Neighbours.Length; i++)
+        {
+            if (Neighbours[i] == null) continue;
+
+            ActivateObstacole obstacle = Neighbours[i].GetComponent<ActivateObstacole>();
+            if (obstacle != null)
+            {
+                obstacle.Deactivate();
+            }
         }
     }
 }
