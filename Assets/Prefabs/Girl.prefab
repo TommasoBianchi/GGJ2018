@@ -170,7 +170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   thingsThatKillPeople:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 24832
   dieTime: 1
   personType: 2
 --- !u!114 &114486850441423170
