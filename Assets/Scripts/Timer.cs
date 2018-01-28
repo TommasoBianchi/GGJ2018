@@ -15,6 +15,11 @@ public class Timer : MonoBehaviour {
     private void Update()
     {
         Clock();
+
+        if (timeLeft <= 0)
+        {
+            FindObjectOfType<EndGame>().GameOver();
+        }
     }
 
     private void Clock()

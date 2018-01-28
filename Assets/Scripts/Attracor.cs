@@ -57,7 +57,7 @@ public class Attracor : MonoBehaviour {
         {
             for(i=0;i<Neighbours.Length;i++)
             {
-                if (skillType == 3)
+                if (skillType == 3 && Neighbours[i].GetComponent<Mover>())
                 {
                     Neighbours[i].GetComponent<Mover>().enabled = false;
                     Neighbours[i].GetComponent<BackOnTrack>().enabled = false;
@@ -105,7 +105,8 @@ public class Attracor : MonoBehaviour {
                         Neighbours[i].GetComponent<AttractionMover>().enabled = false;
                         Neighbours[i].gameObject.layer = LayerMask.NameToLayer("Person");
                     }
-                    if (skillType == 3)
+
+                    if (skillType == 3 && Neighbours[i].GetComponent<Mover>())
                     {
                         Neighbours[i].GetComponent<BackOnTrack>().enabled = true;
                         Neighbours[i].GetComponent<AttractionMover>().enabled = false;
