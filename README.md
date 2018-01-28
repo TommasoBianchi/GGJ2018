@@ -1,6 +1,6 @@
 # Happy Smart People
 
-Today people is too easily conditioned by web transmissions and smartphones. Use their idols against them to kill 'em all and eradicate "Happy Smart People" from Earth.
+Today people is too easily conditioned by web transmissions and smartphones. Use their idols against them to eliminate "Happy Smart People" from Earth.
 
 ## How to play
 
