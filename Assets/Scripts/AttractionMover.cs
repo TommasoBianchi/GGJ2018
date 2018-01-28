@@ -66,10 +66,6 @@ public class AttractionMover : MonoBehaviour {
             transform.Rotate(0, 0, Mathf.Max(-turningSpeed * Time.deltaTime, angle));
         }
 
-        if ((transform.position - attractorLocation).sqrMagnitude <= croudArea)
-        {
-            arrived = true;
-        }
         transform.Translate(Vector3.right * speed * Time.deltaTime, Space.Self);
     }
 }

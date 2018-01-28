@@ -24,6 +24,7 @@ public class Mover : MonoBehaviour {
         canMove = true;
         randomTargetDisplacement = true;
         animator = GetComponentInChildren<Animator>();
+        randomizeSpeed = false;
     }
 
     void Update()
