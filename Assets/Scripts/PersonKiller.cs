@@ -46,6 +46,7 @@ public class PersonKiller : MonoBehaviour {
             {
                 isAlive = false;
                 Instantiate(bloodPrefab, transform.position - new Vector3(0, 0, 0.75f), Quaternion.Euler(0, 0, Random.Range(0, 360f)));
+                SFXManager.Instance.PlaySample(0);
             }
         }
     }

@@ -6,7 +6,7 @@ public class SFXManager : MonoBehaviour {
 
     public AudioClip[] samples;
 
-    public SFXManager Instance { get; private set; }
+    public static SFXManager Instance { get; private set; }
 
     void Start()
     {

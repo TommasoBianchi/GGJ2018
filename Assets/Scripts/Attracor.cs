@@ -24,6 +24,7 @@ public class Attracor : MonoBehaviour {
         influencing = true;
         startTime = Time.time;
         Activate();
+        SFXManager.Instance.PlaySample(1);
     }
 
 	// Update is called once per frame
