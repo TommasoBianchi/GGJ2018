@@ -55,7 +55,7 @@ public class SkillPanelBehaviour : MonoBehaviour {
     public void Skill2CD ()
     {
         float fillAmount;
-        fillAmount = 1 - ((10 - GameManager.GetKillPoints(personType)) / 10);
+        fillAmount = 1 - ((10 - GameManager.GetKillPoints(personType)) / 10f);
         skill2.transform.GetComponent<Image>().fillAmount = fillAmount;
         if (fillAmount > 1)
         {
@@ -70,7 +70,7 @@ public class SkillPanelBehaviour : MonoBehaviour {
     public void Skill3CD()
     {
         float fillAmount;
-        fillAmount = 1 - ((skill3nextUse - GameManager.killCounter) / killcd3);
+        fillAmount = 1 - ((30 - GameManager.GetKillPoints(personType)) / 30f);
         skill3.transform.GetComponent<Image>().fillAmount = fillAmount;
         if (fillAmount > 1)
         {

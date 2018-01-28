@@ -16,6 +16,11 @@ public static class GameManager {
 
     static GameManager()
     {
+        Initialize();
+    }
+
+    public static void Initialize()
+    {
         killCounter = 0;
         killPoints = new Dictionary<PersonType, int>();
         killPoints.Add(PersonType.Gamer, 0);
