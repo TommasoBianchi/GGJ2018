@@ -12,7 +12,7 @@ public class AttractionMover : MonoBehaviour {
     private bool arrived;
 
     protected float turningSpeed = 500f;
-    protected float speed = 1f;
+    protected float speed = 2f;
 
     void OnEnable () {
         arrived = false;   

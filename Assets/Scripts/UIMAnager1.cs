@@ -94,6 +94,7 @@ public class UIMAnager1 : MonoBehaviour {
         activeIcon[iconOnMouse].SetActive(false);
         trashBin.SetActive(false);
         OnSkillLaunched();
+        
 
     }
 

@@ -10,6 +10,7 @@ public class SkillPanelBehaviour : MonoBehaviour {
     public GameObject skill3;
     public GameObject Canvas;
     public int skillPanel;
+    public GameManager.PersonType personType;
 
     private float endCd;
     private int skill2nextUse;
@@ -52,7 +53,7 @@ public class SkillPanelBehaviour : MonoBehaviour {
     public void Skill2CD ()
     {
         float fillAmount;
-        fillAmount = 1 - ((skill2nextUse - GameManager.killCounter) / killcd2);
+        fillAmount = 1 - ((10 - GameManager.GetKillPoints(personType)) / 10);
         skill2.transform.GetComponent<Image>().fillAmount = fillAmount;
         if (fillAmount > 1)
         {
